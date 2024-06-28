@@ -1,0 +1,81 @@
+@import "@assets/styles/light-dark-theme";
+.mainWrapper{
+    padding: 10px;
+    @media screen and (max-width: 450px) {
+        padding: 4px;
+    }
+    .eventNameHandler{
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    .checkResultHead{
+        &:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }  
+    }
+} 
+.eyeIcon {
+    svg {
+    font-size: 17px;
+    @media only screen and (max-width: 500px) {
+      font-size: 15px;
+    }
+      path {
+        color: var(--filledBtnColorNew);
+      }
+    }
+  }
+  .searchBarButton {
+    // margin: 20px 10px;
+    align-items: inside;
+    // padding: 0px
+    ;
+
+    :global(.ant-input-search-button) {
+      padding: 10px 5px;
+      display: flex;
+      align-items: center;
+      height: 33px;
+      background-color: var(--titleBarRightBg)!important;
+      div {
+        color: var(--filledBtnColorNew);
+      }
+    }
+  }
+  .searchIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .iconSearch {
+      svg {
+      font-size: 17px;
+      @media only screen and (max-width: 500px) {
+        font-size: 15px;
+      }
+        path {
+          color: var(--filledBtnColorNew);
+        }
+      }
+    }
+  }
+  .searchWrapper{
+    width: 40%;
+    padding-bottom: 10px;
+    :global(.ant-input-affix-wrapper){
+      height: 35px !important;
+      border: 1px solid #184b74;
+      input{
+    align-items: center;
+    display: flex;
+      }
+    }
+    @media only screen and (max-width: 500px) {
+      width: 80%;
+
+    }
+  }
+  .resultBtn{
+    background-color: red !important;
+  }

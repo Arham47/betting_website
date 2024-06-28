@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@assets": ["assets"],
+      "@assets/*": ["assets/*"],
+      "@components": ["components"],
+      "@components/*": ["components/*"],
+      "@pages": ["pages"],
+      "@pages/*": ["pages/*"],
+      "@stores": ["stores"],
+      "@stores/*": ["stores/*"],
+      "@api": ["api"],
+      "@api/*": ["api/*"],
+      "@style": ["style"],
+      "@style/*": ["style/*"],
+      "@utils": ["utils"],
+      "@utils/*": ["utils/*"],
+      "@commonComponents": ["components/common-components"],
+      "@commonComponents/*": ["components/common-components/*"],
+      "@commonComponentsScss": ["components/common-components/scss"],
+      "@commonComponentsScss/*": ["components/common-components/scss/*"]
+    }
+  }
+}

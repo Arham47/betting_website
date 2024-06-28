@@ -1,0 +1,11 @@
+@import '@assets/styles/fonts';
+
+.label {
+  display: inline-block;
+  font-size: $font-size-16;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+  line-height: normal;
+  margin-bottom: 5px;
+}

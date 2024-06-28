@@ -1,0 +1,18 @@
+@import "@assets/styles/light-dark-theme";
+.btnStyle {
+    color: var(--fontColor);
+}
+.btnStyleOne {
+    color: #fff;
+}
+.resultModal{
+    :global(.ant-modal-content) {
+        background-color: var(--cardBg) !important;
+    color: var(--fontColor);
+    height: fit-content;
+    :global(.ant-modal-title) {
+        color: var(--fontColor);
+        background-color: var(--cardBg);
+    }
+}
+}

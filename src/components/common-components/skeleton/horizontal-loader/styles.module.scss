@@ -1,0 +1,93 @@
+@import '@assets/styles/colors';
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.loadingBackground {
+  background: rgba(127, 78, 173, 0.2);
+  border-radius: 5em;
+  height: 5px;
+  width: 83px;
+
+  &.lightLoadingBackground {
+    background: transparent !important;
+  }
+}
+
+.loadingBar {
+  background: purple;
+  border-radius: 5em;
+  height: 5px;
+  overflow: hidden;
+  position: relative;
+  width: 34px;
+
+  &::before {
+    animation: load 1s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      #f7f4fb 50%,
+      transparent 100%
+    );
+    content: '';
+    display: block;
+    height: 100%;
+    left: -150px;
+    position: absolute;
+    top: 0;
+    width: 150px;
+  }
+}
+
+.grayLoadingBar {
+  background: grey;
+  border-radius: 5em;
+  height: 5px;
+  overflow: hidden;
+  position: relative;
+  width: 34px;
+
+  &::before {
+    animation: load 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      #606369 50%,
+      transparent 100%
+    );
+    content: '';
+    display: block;
+    height: 100%;
+    left: -150px;
+    position: absolute;
+    top: 0;
+    width: 150px;
+  }
+
+  &.grayLightLoadingBar {
+    background: grey !important;
+
+    &::before {
+      background: linear-gradient(
+        to right,
+        transparent 0%,
+        #e8e8e8 50%,
+        transparent 100%
+      ) !important;
+    }
+  }
+}
+
+@keyframes load {
+  from {
+    left: -150px;
+  }
+
+  to {
+    left: 100%;
+  }
+}

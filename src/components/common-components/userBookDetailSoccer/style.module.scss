@@ -1,0 +1,149 @@
+.mainWrapper{
+    padding: 10px;
+    .sportTitleBarWrapper{
+        background-color: var(--titleBarBg);
+        border-bottom: 1px solid var(--titleBarBorder);
+        color: var(--fontColorWithBg);
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        padding: 0px 16px;
+        width: 100%;
+        .headingBtnWrapper{
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          h4 {
+            font-weight: 600;
+            font-size: 17px;
+            color: var(--fontColorWithBg);
+            margin: 0;
+            @media only screen and (max-width: 500px) {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+      .btnStyle {
+        color: #ffff;
+      }
+      .marginTopClass{
+        margin-top: 25px;
+        .tableWrapperMain{
+          :global(.ant-table-column-title){
+            z-index: 0;
+          }
+        }
+        .headerBtnCard {
+            background-color: var(--cardBg);
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: var(--cardBorder);
+          }
+    }
+    .usersHeaderBtnContainer{
+        width: 100%;
+    .btnContainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        .activeButton {
+          box-shadow: var(--titleBarRightBg);
+          background-color: var(--titleBarRightBg);
+          *{
+              color: var(--filledBtnColorNew);
+          }    
+        }
+        .headerButtons{
+          &:hover{           
+               background-color: var(--titleBarRightBg);
+               border: 1px solid var(--titleBarRightBg) !important;
+               *{
+                  color: var(--filledBtnColorNew);
+              }      
+          }
+        }
+        
+
+        @media screen and ( max-width: 1080px ) {
+            justify-content: center;
+        }
+      
+    }
+}
+.marginTopClass{
+    margin-top: 25px;
+.flexSpaceBetweenClass{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    gap: 20px;
+    justify-content: center;
+    .entriesData{
+        display: flex;
+        gap: 5px;
+        align-items: center;
+
+        .inputHeight{
+            min-height: 30px;
+            border-radius: 5px;
+            padding-left: 5px;
+            border: 1px solid #121212;
+            color: #121212 !important;
+        }
+        .inputColor{
+            color: #121212 !important;
+        }
+    }
+}
+}
+.tableWrapper{
+  padding: 5px;
+  background-color: var(--cardBg);
+  overflow-x: scroll;
+  &::-webkit-scrollbar{
+    height: 6px;
+  }
+  &::-webkit-scrollbar-thumb{
+    background-color: var(--headerBgV2) ;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: var(--headerBg);
+  }
+    .customTable {
+      margin-top: 4px;
+      width: 100%;
+      border-spacing: 0;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 10px;
+      border: 1px solid  #abb0b3;
+      margin-top: 10px !important;
+      border-collapse: collapse;
+      text-align: center;
+    }
+    th {
+      font-weight: 600;
+      font-size: 14px;
+      white-space: nowrap;
+      line-height: 17px;
+      background-color: var(--headerBgV2);
+      color: var(--sideBarFontColorV2);
+      // &:hover {
+      //   // color: var(--fontColorWithBg);
+      //   background-color: var(--cardBg) !important;
+      // }
+      *{
+        color: var(--sideBarFontColorV2)
+      }
+    }
+}
+.emptyBox{
+  :global(.ant-empty-description){
+    color: var(--fontColor);
+  }
+}
+}

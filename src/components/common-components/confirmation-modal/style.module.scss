@@ -1,0 +1,26 @@
+.confirmationModal {
+  .footerBtnWrapper {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  :global(.ant-modal-close-x) {
+    display: none;
+  }
+  :global(.ant-modal-content) {
+    background-color: var(--cardBg);
+    padding: 0px;
+  }
+  .modalBodyContent {
+    padding: 5px 10px;
+
+    .warningText {
+        color: var(--formItemExplainError);
+        position: absolute;
+        bottom: 28px;
+    }
+
+  }
+}

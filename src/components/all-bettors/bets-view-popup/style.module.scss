@@ -1,0 +1,71 @@
+@import "@assets/styles/light-dark-theme";
+.btnStyles {
+  div{
+    color: var(--filledBtnColorNew) !important;
+  }
+}
+.btnStyleOne {
+    color: #fff;
+}
+.resultModal{
+    :global(.ant-modal-content) {
+        background-color: var(--cardBg) !important;
+    color: var(--fontColor);
+    height: fit-content;
+    padding: 7px !important;
+    :global(.ant-modal-title) {
+        color: var(--fontColor);
+        background-color: var(--cardBg);
+    }
+}
+
+}
+.tableStyle {
+  width: 100%;
+  max-height: 400px;
+  overflow-y: scroll;
+
+  tr{
+    white-space: nowrap;
+  }
+  .redrow {
+    :global(.ant-table-cell){
+    background-color: #FFCDCC !important; /* Set the background color to red for these rows */
+    *{ color: #121212;
+    }
+  }
+  &:hover{
+    td{
+      background-color: #FFCDCC !important;
+      *{ color: var(--fontColor) !important;
+      }
+    }
+  }
+}
+.BackRow {
+  
+  :global(.ant-table-cell){
+  background-color: #E3F8FF !important; /* Set the background color to red for these rows */  
+  
+  *{ color: #121212;
+    &:hover{
+      
+      color: var(--fontColor) !important;
+  }
+ }
+}
+&:hover{
+  td{
+    background-color: #E3F8FF !important;
+    *{  color: var(--fontColor) !important;}
+    
+  }
+}
+}
+}
+.spinDiv{
+  display: flex;
+  justify-content: center;
+  min-height: 130px;
+  align-items: center;
+}

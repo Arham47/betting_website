@@ -1,0 +1,314 @@
+@import "@assets/styles/colors";
+
+$themes: (
+  //////////////////////////// Side Bar ////////////////////////////
+  sideBarBg:
+    (
+      greyTheme: #dddddd,
+      lightTheme: #2f353b,
+      darkTheme: #181f2c,
+    ),
+    sideBarBgV2:
+    (
+      greyTheme: #000000,
+      lightTheme: #000c24,
+      darkTheme: #373737,
+    ),
+  sideBarFontColor: (
+    greyTheme: #292e3a,
+    lightTheme: #ffffff,
+    darkTheme: #ffffff,
+  ),
+  sideBarFontColorV2: (
+    greyTheme: #ffffff,
+    lightTheme: #ffffff,
+    darkTheme: #ffffff,
+  ),
+  sideBarSelectedFontColor: (
+    greyTheme: #ffffff,
+    lightTheme: #ffffff,
+    darkTheme: #ffffff,
+  ),
+  sideBarSelectedTabBg: (
+    greyTheme: #085845,
+    lightTheme: #20a8d8,
+    darkTheme: #085845,
+  ),
+  sideBarSelectedTabBgV2: (
+    greyTheme: #00a826,
+    // greyTheme: #00ff3a,
+    lightTheme: #184b74,
+    darkTheme: #af0000,
+  ),
+  sideBarSelectedTabBoxShadow: (
+    greyTheme: 4px 4px 0px #000000,
+    lightTheme: 0px,
+    darkTheme: 4px 4px 0px #000000,
+  ),
+  sideBarTabHover: (
+    greyTheme: #085845,
+    lightTheme: #20a8d8,
+    darkTheme: #085845,
+  ),
+  sideBarTabBoxShadowHover: (
+    greyTheme: 4px 4px 0px rgba(7, 190, 147, 0.4),
+    lightTheme: 0px,
+    darkTheme: 4px 4px 0px rgba(24, 31, 44, 0.4),
+  ),
+  //////////////////////////// Header bar ////////////////////////////
+  headerBg:
+    (
+      greyTheme: #dddddd,
+      lightTheme: #ffffff,
+      darkTheme: #292e3a,
+    ),
+    headerBgV2:
+    (
+      // greyTheme: #2C2C2C,
+      greyTheme: #000000,
+
+      lightTheme: #184b74,
+      darkTheme: #AF0000,
+    ),
+  headerFontColor: (
+    greyTheme: #292e3a,
+    lightTheme: #73818f,
+    darkTheme: #ffffff,
+  ),
+  headerFontColorHover: (
+    greyTheme: #000000,
+    lightTheme: #000000,
+    darkTheme: #ffffff,
+  ),
+  //////////////////////////// login Page ////////////////////////////
+  darkInputBg:
+    (
+      greyTheme: rgba(255, 255, 255, 0.15),
+      lightTheme: rgba(255, 255, 255, 0.15),
+      darkTheme: rgba(0, 0, 0, 0.15),
+    ),
+  loginFieldBg: (
+    greyTheme: #30887a,
+    lightTheme: #30887a,
+    darkTheme: black,
+  ),
+  //////////////////////////// buttons ////////////////////////////
+  filledBtnColorHover:
+    (
+      greyTheme: #ffffff,
+      lightTheme: #ffffff,
+      darkTheme: #ffffff,
+    ),
+  filledBtnBoxShadowHover: (
+    greyTheme: 2px 2px 2px 2px rgba(7, 190, 147, 0.4),
+    lightTheme: 2px 2px 2px 2px rgb(0, 177, 129, 0.4),
+    darkTheme: 2px 2px 2px 2px rgba(7, 190, 147, 0.4),
+  ),
+  filledBtnBgHover: (
+    greyTheme: #07be93,
+    lightTheme: #4dbd74,
+    darkTheme: #07be93,
+  ),
+  filledBtnColor: (
+    greyTheme: #ffffff,
+    lightTheme: #ffffff,
+    darkTheme: #ffffff,
+  ),
+  filledBtnColorNew: (
+    greyTheme: #ffffff,
+    lightTheme: #121212,
+    darkTheme: #121212,
+  ),
+  filledBtnBg: (
+    greyTheme: #07be93,
+    lightTheme: #00b181,
+    darkTheme: #07be93,
+  ),
+  filledBtnBorder: (
+    greyTheme: #07be93,
+    lightTheme: #00b181,
+    darkTheme: #bdbdbd,
+  ),
+  outlinedBtnBoxShadowHover: (
+    greyTheme: 2px 2px 2px 2px rgb(0, 0, 0, 0.4),
+    lightTheme: 2px 2px 2px 2px rgb(32, 168, 216, 0.4),
+    darkTheme: 2px 2px 2px 2px rgb(0, 0, 0, 0.4),
+  ),
+  outlinedBtnBorderHover: (
+    greyTheme: #000000,
+    lightTheme: #20a8d8,
+    darkTheme: #000000,
+  ),
+  outlinedBtnColorHover: (
+    greyTheme: #000000,
+    lightTheme: #ffffff,
+    darkTheme: #ffff,
+  ),
+  outlinedBtnBgHover: (
+    greyTheme: transparent,
+    lightTheme: #20a8d8,
+    darkTheme: transparent,
+  ),
+  outlinedBtnBgForUser: (
+    greyTheme: #085845,
+    lightTheme: #20a8d8,
+    darkTheme: #085845,
+  ),
+  outlinedBtnColor: (
+    greyTheme: #000000,
+    lightTheme: #20a8d8,
+    darkTheme: #ffffff,
+  ),
+  outlinedBtnBg: (
+    greyTheme: transparent,
+    lightTheme: transparent,
+    darkTheme: transparent,
+  ),
+  outlinedBtnBorder: (
+    greyTheme: #000000,
+    lightTheme: #20a8d8,
+    darkTheme: #000000,
+  ),
+  //////////////////////////// Content Pages ////////////////////////////
+  pagesContainerFluidBoxShadow:
+    (
+      greyTheme: none,
+      lightTheme: 0px,
+      darkTheme: none,
+    ),
+  fontColor: (
+    greyTheme: #000000,
+    lightTheme: #000000,
+    darkTheme: #ffffff,
+  ),
+  fontColorWithBg: (
+    greyTheme: #ffffff,
+    lightTheme: #000000,
+    darkTheme: #ffffff,
+  ),
+  pagesContainerFluidBorder: (
+    greyTheme: none,
+    lightTheme: 1px solid #c8ced3,
+    darkTheme: none,
+  ),
+  pagesContainerFluidBg: (
+    greyTheme: #ffffff,
+    lightTheme: #e4e5e6,
+    darkTheme: transparent,
+  ),
+  formItemExplainError: (
+    greyTheme: darkred,
+    lightTheme: darkred,
+    darkTheme: #ff4d4f,
+  ),
+  titleBarBorder: (
+    greyTheme: none,
+    lightTheme: #c8ced3,
+    darkTheme: none,
+  ),
+  titleBarBg: (
+    greyTheme: #085845,
+    lightTheme: #f0f3f5,
+    darkTheme: #085845,
+  ),
+  titleBarLeftBg: (
+    // greyTheme: #333333,
+    greyTheme: #000000,
+
+    lightTheme: #00143c,
+    darkTheme: #af0000,
+  ),
+  titleBarRightBg: (
+    greyTheme: #00a826,
+
+    // greyTheme: #00ff3a,
+    lightTheme: #faff05,
+    darkTheme: #ffe000,
+  ),
+  cardIconBg: (
+    greyTheme: #c9c9c9,
+    lightTheme: #c9c9c9,
+    darkTheme: #2d3546,
+  ),
+  pagesBg: (
+    greyTheme: #ffffff,
+    lightTheme: #e4e5e6,
+    darkTheme: #0e121a,
+  ),
+  tableBorder: (
+    greyTheme:  1px solid #abb0b3,
+    lightTheme: 1px solid #abb0b3,
+    darkTheme:  1px solid #abb0b3,
+  ),
+  cardBg: (
+    greyTheme: #ffffff,
+    lightTheme: #ffffff,
+    darkTheme: #222a3c,
+  ),
+  racingBgColor: (
+      greyTheme: #dddddd,
+      lightTheme: #dddddd,
+      darkTheme: #222a3c,
+
+  ),
+  navBarBg: (
+    greyTheme: #dddddd,
+    lightTheme: #222a3c,
+    darkTheme: #ffffff,
+  )
+  ,
+  cardBorder: (
+    greyTheme: 0px,
+    lightTheme: 2px solid #c8ced3,
+    darkTheme: black,
+  ),
+  footer: (
+    greyTheme: #181f2c,
+    lightTheme: #23282c,
+    darkTheme: #ffffff,
+  ),
+  ribbonIconColor: (
+    greyTheme: #E73D8C,
+    lightTheme: black,
+    darkTheme: #E73D8C,
+  ),
+  //////////////////////////// Form Style  ////////////////////////////
+  antFormLabelColor:
+    (
+      greyTheme: #000000,
+      lightTheme: #000000,
+      darkTheme: #ffffff,
+    ),
+    iconWhite:(
+      greyTheme: #ffffff,
+      lightTheme: #ffffff,
+      darkTheme: #ffffff,
+    ),
+    heightSearchBar:(
+      greyTheme: 33px,
+      lightTheme: 33px,
+      darkTheme: 35px,
+    )
+);
+
+@mixin styles($mode) {
+  @each $key, $map in $themes {
+    @each $prop, $color in $map {
+      @if $prop ==$mode {
+        --#{$key}: #{$color};
+      }
+    }
+  }
+}
+
+.dark-theme {
+  @include styles("darkTheme");
+}
+
+.light-theme {
+  @include styles("lightTheme");
+}
+
+.grey-theme {
+  @include styles("greyTheme");
+}

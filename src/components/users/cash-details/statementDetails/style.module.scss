@@ -1,0 +1,408 @@
+.mainContainer {
+  .container {
+    .headerWrapper{
+      display: flex;
+      align-items: center;
+      margin-left: 10px;
+      background-color: var(--titleBarBg);
+      border-radius: 5px;
+      padding: 6px;
+      .eventClass{
+        color: var(--fontColorWithBg);
+      }
+      span{
+        margin-left: 6px;
+        font-weight: bolder;
+      }
+      .userNameDesign{
+        background-color: #ffc107;
+        padding: 8px;
+        border-radius: 8px;
+        color: #121212;
+        margin-left: 6px;
+        font-weight: bold;
+      }
+    }
+    padding: 10px;
+    padding-bottom: 8px;
+    @media screen and (max-width:650px) {
+      padding: 4px;
+    }
+    .clickAble {
+      color: #00b181;
+      font-weight: bold;
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+        color: #00b181;
+        font-weight: bold;
+      }
+    }
+    .dailyPlTitlebar {
+      margin-top: 10px;
+      border: var(--cardBorder);
+      min-height: 40px;
+    }
+
+    .dateSection {
+      display: flex;
+      gap: 10px;
+      padding: 15px;
+      flex-wrap: wrap;
+      width: 100%;
+      background-color: var(--cardBg);
+      .datePickerOne {
+        max-width: 223px;
+      }
+    }
+    .flexAndGapClass{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      .mainContaierofInput{
+        // border: 1px solid var(--fontColor) !important;
+        display: flex;
+        border-radius: 5px;
+      }
+      :global(.react-datetime-picker__clock){
+        display: none !important;
+      }
+      :global(.react-datetime-picker__clear-button) {
+        display: none !important;
+      }
+      :global(.react-datetime-picker__inputGroup){
+        *{
+          color: #121212!important
+        }
+      }
+      :global(.react-datetime-picker__wrapper){
+        height: 29px;
+        padding: 0px 10px;
+        background-color: #ffff;
+        border-radius: 5px;
+      }
+      :global(.react-calendar){
+        background-color: var(--cardBg)!important;
+        *{ background-color: var(--cardBg)!important;
+        }
+        &:hover{
+         *{ background-color: var(--cardBg)!important;
+        }
+      }
+      }
+      .suffixIcon{
+        background-color: #F0F3F5!important;
+          width: 35px;
+          border-radius: 5px;
+        img{
+          margin-top: 3px;
+          padding: 0px 7px;
+        }
+      }
+      }
+
+    :global(.ant-picker-suffix) {
+      background-color: #929292;
+    }
+    .dailyPlTitlebarTwo{
+      min-height: 30px;
+      border: var(--cardBorder);
+      min-height: 40px;
+    }
+    .mainTableDiv {
+      display: flex;
+      // padding: 10px;
+      flex-direction: row;
+      gap: 10px;
+      margin-top: 10px;
+      .gridOne {
+        // min-width: 33%;
+        .positiveClient {
+          :global(.ant-table-footer) {
+            padding: 0;
+            border-radius: 0;
+            color: #ffff;
+            border: var(--cardBorder);
+            // height: 50px;
+            padding: 5px 10px 5px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #085845;
+
+            .footerTotal {
+              display: flex;
+              margin: 0px;
+              flex-direction: row;
+              color: #ffff;
+              justify-content: space-between;
+              padding-inline: 8px;
+            }
+          }
+        }
+        // @media screen and (max-width: 966px) {
+        //   min-width: 60%;
+        // }
+        // @media screen and (max-width: 476px) {
+        //   min-width: 70%;
+        //   justify-content: center;
+        // }
+      }
+      .gridTwo {
+        // min-width: 33%;
+
+        .negativeClient {
+          :global(.ant-table-footer) {
+            padding: 0;
+            border-radius: 0;
+            color: #ffff;
+            // height: 50px;
+            padding: 5px 10px 5px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            // border: var(--cardBorder);
+            background-color: #F86C6B;
+
+            .footerTotal {
+              margin: 0px;
+              display: flex;
+              flex-direction: row;
+              color: #ffff;
+              justify-content: space-between;
+              padding-inline: 8px;
+            }
+          }
+        }
+        // @media screen and (max-width: 966px) {
+        //   min-width: 60%;
+        // }
+        // @media screen and (max-width: 476px) {
+        //   min-width: 70%;
+        //   justify-content: center;
+        // }
+      }
+      .gridThree {
+        :global(.ant-table-footer) {
+          padding: 0;
+          border-radius: 0;
+          color: #ffff;
+          // height: 50px;
+          padding: 5px 10px 5px 10px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          // border: var(--cardBorder);
+          background-color: #F86C6B;
+
+          .footerTotal {
+            margin: 0px;
+            display: flex;
+            flex-direction: row;
+            color: #ffff;
+            justify-content: space-between;
+            padding-inline: 8px;
+          }
+        }
+
+      }
+      .gridThreePositive {
+        :global(.ant-table-footer) {
+          padding: 0;
+          border-radius: 0;
+          color: #ffff;
+          // height: 50px;
+          padding: 5px 10px 5px 10px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          // border: var(--cardBorder);
+          background-color: #085845;
+
+          .footerTotal {
+            margin: 0px;
+            display: flex;
+            flex-direction: row;
+            color: #ffff;
+            justify-content: space-between;
+            padding-inline: 8px;
+          }
+        }
+
+      }
+      
+    }
+    .eventHead{
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      font-size: 17px;
+      color: var(--filledBtnColorNew);
+    }
+  }
+}
+.btnStyle{
+  color: #ffff;
+}
+.mainWrraperBetterTable {
+  color: var(--fontColor);
+  padding: 10px;
+  .rowOne {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+//     flex-wrap: wrap;
+//     @media only screen and (max-width: 774px) {
+// flex-direction: column;
+//    }
+    // flex-direction: row;
+    .rowContentWrapper {
+      display: inline-block;
+      min-width: 20px;
+      padding: 1px 8px;
+      height: 14px;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1;
+      color: #fff;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: middle;
+      background-color: #777;
+      border-radius: 10px;
+    }
+  }
+
+
+  .flexMargin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    gap: 10px;
+    flex-wrap: wrap;
+    @media screen and (max-width: 500px) {
+      justify-content: center;
+      flex-direction: column;      
+    }
+    .entriesData {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      .commonSelectBox {
+        width: 300px !important;
+        height: 25px;
+      }
+      .inputHeight {
+        min-height: 25px;
+        // border-radius: 5px;
+        // padding-left: 5px;
+        border: 1px solid #121212;
+        color: #121212 !important;
+      }
+      .inputColor {
+        color: #121212 !important;
+      }
+    }
+  }
+  .tableWrapperClass{
+    background-color: var(--cardBg);
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+  .newtable{
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+   
+    .userNameWrapper{
+      display: flex;
+      // justify-content: space-between;
+      // padding: 10px;
+      align-items: center;
+      gap: 10px;
+      .plusIcon{
+        path{
+          color: #07be93;
+        }
+      }
+      .minusIcon{
+        path{
+          color: red;
+        }
+      }
+    }
+    .listStyleFont14{
+      font-size: 14px;
+      padding-top: 8px;
+    }
+    // .paddingLeft10{
+    //   // padding-left: 10px;
+    // }
+    .paddingLeft22{
+      padding-left: 22px;
+    }
+    .listStyleOption{
+      display: flex;
+      gap: 6px;
+      white-space: nowrap;
+      align-items: center;
+      // flex-wrap: wrap;
+    }
+    .noRecordClass{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin-top: 30px;
+    }
+    table {
+        border-spacing: 0;
+        margin-top: 10px;
+        border-collapse: collapse;
+      }
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border: 1px solid  #abb0b3;
+        margin-top: 10px !important;
+        border-collapse: collapse;
+        border-spacing: 0;
+        font-size: 12px;
+      }
+  }
+}
+}
+.casinoRow{
+  .mainWrapper{
+    width: 100%;
+    margin: 0px 8px;
+    padding: 8px 4px;
+    border-top: 1px solid gray;
+    display: flex;
+    div:first-child{
+      width: 40%;
+    }
+    div:last-child{
+      width: 60%;
+    }
+  }
+  .mainWrapperLast{
+    width: 100%;
+    margin: 0px 8px;
+    padding: 8px 4px;
+    border-top: 1px solid gray;
+    background-color: #ebcccc;
+    display: flex;
+    div:first-child{
+      color: #121212;
+      width: 40%;
+    }
+    div:last-child{
+      color: #121212;
+      width: 60%;
+      font-weight: bold;
+    }
+  }
+}

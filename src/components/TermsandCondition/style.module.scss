@@ -1,0 +1,39 @@
+@import "@assets/styles/colors";
+
+.wrapper{
+  padding: 10px;
+  color: var(--fontColor);
+  background-color: var(--pagesBg);
+  .titleBar1 {
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    height: 43px;
+    h4{
+      font-weight: bold;
+      font-size: 30px;
+    }
+  }
+  .htmlContent{
+    margin-top: 30px;
+    * {
+      color: var(--fontColor) !important;
+    }
+  }
+  .fontSizeTerms{
+    font-size: 25px;
+  }
+  .antIconClass{
+    font-size: 30px;
+    color: var(--fontColor);
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+}
+.emptyClass{
+  :global(.ant-empty-description){
+    color: var(--fontColor) !important;
+  }
+}

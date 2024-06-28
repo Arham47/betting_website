@@ -1,0 +1,166 @@
+@import "@assets/styles/colors";
+
+.mainCashWrapper {
+  // background-color: #e4e5e6;
+  background-color: var(--pagesBg);
+  padding: 10px;
+  .backgroundColorChange {
+    background-color: var(--pagesBg);
+    border: var(--cardBorder);
+    // padding: 7px 20px;
+    .depositeTitleBar {
+      // background-color: #00ff3a;
+      h4 {
+        color: #ffff !important;
+      }
+    }
+    .colorGreen {
+      // background-color: #00a826;
+      background-color: #00a826;
+      div {
+        color: #ffff;
+      }
+    }
+    .withdrawTitleBar {
+      // background-color: #dc3545;
+      h4 {
+        color: #ffff !important;
+      }
+    }
+    .withdrawBtn {
+      background-color: #dc3545;
+      div {
+        color: #ffff;
+      }
+    }
+  }
+  .cashContainer {
+    background-color: var(--cardBg);
+    border: var(--cardBorder);
+    padding-bottom: 20px;
+    padding: 0px 20px;
+    .tabWrapper {
+      margin-top: 14px;
+      .userNameClass {
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      :global(.ant-tabs) {
+        :global(.ant-tabs-content-holder) {
+          border-top: 1px solid #dee2e6;
+          padding-top: 4px;
+        }
+      }
+
+      :global(.ant-tabs-nav-list) {
+        width: 100%;
+        background-color: var(--cardBg);
+        flex-direction: row;
+        justify-content: space-around;
+
+        :global(.ant-tabs-tab) {
+          width: 46%;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          margin: 0px;
+        }
+
+        :global(.ant-tabs-tab-active) {
+          background-color: var(--sideBarSelectedTabBgV2);
+          border-radius: 8px;
+
+          :global(.ant-tabs-tab-btn) {
+            color: #ffff;
+          }
+        }
+
+        :global(.ant-tabs-tab-btn) {
+          color: #00b181;
+        }
+
+        :global(.ant-tabs-ink-bar-animated) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .depositeCashWrapper {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 60%;
+    @media screen and (max-width: 1100px) {
+      width: 100%;
+    }
+    @media screen and (max-width: 650px) {
+      margin-left: 0px;
+    }
+  }
+
+  .depositeCashTable {
+    background-color: var(--cardBg);
+    border: var(--cardBorder);
+    width: 100%;
+    // padding: 10px;
+    .depositForm {
+      padding: 10px;
+
+      .labelAmount {
+        height: 32px;
+        display: flex;
+        align-items: center;
+        border-bottom-left-radius: 8px;
+        border-top-left-radius: 8px;
+        background: var(--cardIconBg);
+        border: 1px solid #ced4da;
+        padding: 14px;
+        color: var(--fontColor);
+      }
+    }
+
+    .depositeCashForm {
+      :global(.ant-form-item-label) {
+        display: flex;
+      }
+      .gapClass32 {
+        display: flex;
+        gap: 25%;
+        margin-bottom: 25px;
+        flex-wrap: wrap;
+      }
+      .gapClass35 {
+        display: flex;
+        gap: 28.6%;
+        margin-bottom: 25px;
+        flex-wrap: wrap;
+      }
+      .staricColor {
+        color: red;
+        padding-right: 5px;
+      }
+      .colorRed {
+        color: red;
+      }
+      .widthpercentage {
+        width: 340px;
+        @media only screen and (max-width: 450px) {
+
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}
+.mainCashWrapper {
+@media only screen and (max-width: 650px) {
+
+    padding: 10px 4px !important;
+  }
+}
+.amountInput{
+border-radius: 0px 4px 4px 0px !important;
+margin: 0 !important;
+}

@@ -1,0 +1,47 @@
+.mainContainer{
+
+    margin: auto;
+
+    .searchBarMain{
+        .searchTitleBar{
+        display: flex;
+        align-items: center;
+        background-color: var(--titleBarBg);
+        border-bottom: 1px solid var(--titleBarBorder);
+        color: var(--fontColorWithBg);
+        gap: 10px;
+        padding: 5px 0 5px 10px;
+        h4 {
+          font-weight: 600;
+          font-size: 17px;
+          color: var(--fontColorWithBg);
+          margin: 0;
+          @media only screen and (max-width: 500px) {
+            font-size: 15px;
+          }
+        }
+        .filterIcon{
+          font-size: 17px;
+          @media only screen and (max-width: 500px) {
+            font-size: 15px;
+          }
+           svg{
+              path{
+                color: var(--fontColorWithBg);
+              }
+        }}
+      }
+      .searchUserText{
+        font-size: 20px;
+        color: var(--fontColorWithBg);
+        @media only screen and (max-width: 415px) {
+          font-size: 15px;
+        }
+      }
+    }
+    .headerBtnCard {
+        background-color: var(--cardBg);
+        padding: 10px 0px;
+        border: var(--cardBorder);
+      }
+}

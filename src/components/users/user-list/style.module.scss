@@ -1,0 +1,344 @@
+@import "@assets/styles/colors";
+
+.userListMainContainer {
+  padding: 10px;
+  @media screen and (max-width:650px) {
+    padding: 4px;
+  }
+  
+  .userListContainer {
+    background-color: var(--pagesContainerFluidBg);
+    box-shadow: var(--pagesContainerFluidBoxShadow);
+    // border: var(--pagesContainerFluidBorder);
+    width: 100%;
+    height: auto;
+    // border-radius: 15px;
+    // .fontSizeClass{
+    //   font-size: 12px;
+    // }
+    .headerBtnCard {
+      background-color: var(--cardBg);
+      padding: 10px 0px;
+      border: var(--cardBorder);
+    }
+
+    .clientAndTableCardContainer {
+      background-color: var(--cardBg);
+      border: var(--cardBorder);
+      .tableStyle {
+        .clickAble {
+          color: #00b181;
+          font-weight: bold;
+          cursor: pointer;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+    
+        .unClickAble {
+          font-weight: bold;
+        }
+    
+        .userIcons {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          margin: 0px 15px 0px 0px;
+          padding: 0px;
+          background-color: var(--outlinedBtnBg);
+          height: 20px;
+          border: 0;
+    
+          &:hover {
+            color: var(--fontColor);
+            border: 0;
+          }
+        }
+      }
+      .titleBarClientsList {
+        border-radius: 0px;
+        border: var(--cardBorder);
+        *{
+          gap: 0px;
+        }
+      }
+      .clientAndTableCard {
+        padding-bottom: 20px;
+        padding: 0px 20px;
+
+      
+
+        .BtnList {
+          background-color: var(--outlinedBtnBg);
+          color: var(--fontColor);
+          position: relative;
+          gap: 6px;
+          border: 0;
+          padding: 12px;
+          word-spacing: normal;
+
+          img {
+            margin-right: 5px;
+          }
+        }
+        .BtnList:hover {
+          color: var(--fontColor) !important;
+          border: 0;
+        }
+
+        .userIcons {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          margin: 20px 15px 0px 0px;
+          padding: 0px;
+          background-color: var(--fontColor);
+          height: 20px;
+          border: 0;
+
+          &:hover {
+            // color: var(--pagesBg);
+            border: 0;
+          }
+        }
+      }
+    
+      .usersicone {
+        width: 100%;
+        min-height: 100px;
+        margin: 20px 0px;
+        display: flex;
+        align-items: baseline;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 10px;    
+        .buttonContainerClientDetails {
+          padding-bottom: 10px;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+         .displayFlex{
+          display: flex;
+          gap: 3px;
+          margin-left: 10px;
+          .buttonText{
+            font-size: 12px !important;
+            
+          }
+          @media screen and (max-width: 420px) {
+           width: 60%;
+          }
+          }
+          @media screen and (max-width: 420px) {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+          }
+        }
+    
+        .UseBtns {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          align-items: center;
+          flex-wrap: wrap;
+    
+          .btnContainers {
+            display: flex;
+            @media screen and (max-width: 950px) {
+            flex-wrap: wrap;
+            }
+            .BtnList {
+              background-color: var(--outlinedBtnBg);
+              color: var(--fontColor);
+              position: relative;
+              border: 0;
+              gap: 6px;
+              padding: 12px;
+              word-spacing: normal;
+              cursor: default !important;
+              &:hover{
+                border: unset !important;
+                box-shadow: unset !important;
+              }
+              &:focus{
+                border: unset !important;
+                box-shadow: unset !important;
+              }
+              img {
+                margin-right: 5px;
+              }
+            }
+            .BtnList:hover {
+              color: var(--fontColor) !important;
+              border: 0;
+            }
+          }
+        }
+      }
+
+  }
+
+    .searchBarButtunCard {
+      background-color: var(--cardBg);
+      margin-bottom: 20px;
+      border: var(--cardBorder);
+
+      .searchBarCol {
+        display: flex;
+        :global(.ant-input-affix-wrapper){
+          height: 35px !important;
+          border: 1px solid #184b74;
+          input{
+        align-items: center;
+        display: flex;
+        height: 20px !important;
+          }
+        }
+        input{
+          align-items: center;
+          display: flex;
+          height: 35px;
+            }
+        .searchBarButton {
+          margin: 20px 10px;
+          align-items: inside;
+          :global(.ant-input-search-button) {
+            padding: 10px 5px;
+            display: flex;
+            align-items: center;
+            height: 35px !important;
+            color:#fff;
+            background-color: var(--titleBarRightBg);
+            span{
+              color:#fff;
+            }
+          }
+        }
+      }
+    }
+
+   
+  }
+}
+.ledgerClass{
+  margin-right: 6px;
+  path{
+    color: var(--filledBtnColorNew) !important;
+  }
+}
+.btnStyle{
+  color: var(--fontColor) !important;
+  // padding: 0px 4px;
+  :global(.ant-btn){
+    svg{
+        path{
+        color: var(--filledBtnColorNew);
+      }
+    }
+  }
+}
+.settingBtn{
+background: #F86C6B;
+height:23px;
+width:22px;
+font-size: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 4px 10px;
+margin: 0;
+// padding: 0px;
+border-radius:5px;
+ color:#fff !important; 
+}
+.inActiveBtn{
+  background: #fff;
+  height:23px;
+  width:22px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 10px;
+  // padding: 4px;
+  margin: 0;
+  border-radius:5px;
+ color:#F86C6B !important;
+ border: 1px solid #F86C6B
+}
+.activeBtn{
+  background: #4DBD74;
+  height:23px;
+  width:22px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 10px;
+  // padding: 4px;
+  margin: 0;
+  border-radius:5px;
+ color:#fff !important;
+}
+.ledgerBtn{
+  background:#63C2DE;
+  height:23px;
+  width:22px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 10px;
+  margin: 0;
+  // padding: 4px;
+  border-radius:5px;
+   color:#fff !important;
+}
+.cashSlashBtn{
+  background:#FFC107;
+  height:23px;
+  width:22px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 10px 4px 9px;
+  margin: 0;
+  // padding: 4px;
+  border-radius:5px;
+   color:#000000 !important;
+}
+.editBtn{
+  background:#00B181;
+  height:23px!important;
+  width:21px!important;
+  font-size: 14px;
+  padding: 6px;
+  border-radius:5px;
+   color:#fff !important;
+}
+:global(.ant-btn){
+  svg{
+        path{
+      color:#fff;
+    }
+  }
+}
+.searchIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--filledBtnColorNew) !important;
+  .iconSearch {
+    svg {
+    font-size: 17px;
+    @media only screen and (max-width: 500px) {
+      font-size: 15px;
+    }
+      path {
+        color: var(--filledBtnColorNew);
+      }
+    }
+  }
+}

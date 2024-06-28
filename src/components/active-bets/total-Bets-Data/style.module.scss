@@ -1,0 +1,97 @@
+@import "@assets/styles/light-dark-theme";
+.btnStyles {
+  div{
+    color: var(--filledBtnColorNew) !important;
+  }
+}
+.btnStyleOne {
+    color: #fff;
+}
+.resultModal{
+    :global(.ant-modal-content) {
+        background-color: var(--cardBg) !important;
+    color: var(--fontColor);
+    height: fit-content;
+    padding: 7px !important;
+    :global(.ant-modal-title) {
+        color: var(--fontColor);
+        background-color: var(--cardBg);
+    }
+}
+}
+// .antIconClass {
+//     font-size: 30px;
+//     color: var(--fontColor);
+//     padding-right: 10px;
+//     display: flex;
+//     justify-content: center;
+//     margin-top: 30px;
+//     padding-bottom: 10px;
+//   }
+//   .bothBtnWrapper{
+//     :global(.ant-btn){
+//         *{
+//             font-size: 100% !important;
+//             font-weight: 500 !important;
+//         }
+//     }
+//     :global(.ant-btn-default:not(:disabled):hover){
+//         background-color: var(--titleBarRightBg) !important;
+//         border-color: var(--titleBarRightBg) !important;
+//         *{
+//             color: var(--filledBtnColorNew) !important;
+//         }
+//     }
+//   }
+//   .trophyColor{
+//     fill: var(--fontColor);
+//     padding-left: 4px;
+//   }
+//   .emptyBox{
+//     :global(.ant-empty-description){
+//       color: var(--fontColor);
+//     }
+//   }
+//   .rightRibbonRecord{
+//     color: var(--filledBtnColorNew);
+//   }
+.tableStyle {
+  width: 100%;
+  max-height: 400px;
+  overflow-y: scroll;
+  white-space: nowrap;
+  .redrow {
+    :global(.ant-table-cell){
+    background-color: #FFCDCC !important; /* Set the background color to red for these rows */
+    *{ color: #121212;
+    }
+  }
+  &:hover{
+    td{
+      background-color: #FFCDCC !important;
+      *{ color: var(--fontColor) !important;
+      }
+    }
+  }
+}
+.BackRow {
+  
+  :global(.ant-table-cell){
+  background-color: #E3F8FF !important; /* Set the background color to red for these rows */  
+
+ *{ color: #121212;
+  &:hover{
+    
+    color: var(--fontColor) !important;
+  }
+ }
+}
+&:hover{
+  td{
+    background-color: #E3F8FF !important;
+   *{  color: var(--fontColor) !important;}
+    
+  }
+}
+  }
+ }

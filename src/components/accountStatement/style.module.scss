@@ -1,0 +1,127 @@
+@import "@assets/styles/light-dark-theme";
+.mainWrraper {
+  color: var(--fontColor);
+  padding: 10px;
+  .rowOne {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    flex-wrap: wrap;
+    @media only screen and (max-width: 774px) {
+flex-direction: column;
+   }
+    // flex-direction: row;
+    .rowContentWrapper {
+      display: inline-block;
+      min-width: 10px;
+      padding: 3px 7px;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1;
+      color: #fff;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: middle;
+      background-color: #777;
+      border-radius: 10px;
+    }
+  }
+
+
+  .flexMargin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    gap: 10px;
+    flex-wrap: wrap;
+    @media screen and (max-width: 500px) {
+      justify-content: center;
+      flex-direction: column;      
+    }
+    .entriesData {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      .commonSelectBox {
+        width: 300px !important;
+        height: 25px;
+      }
+      .inputHeight {
+        min-height: 25px;
+        // border-radius: 5px;
+        // padding-left: 5px;
+        border: 1px solid #121212;
+        color: #121212 !important;
+      }
+      .inputColor {
+        color: #121212 !important;
+      }
+    }
+  }
+  .tableWrapperClass{
+    background-color: var(--cardBg);
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+  .newtable{
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+   
+    .userNameWrapper{
+      display: flex;
+      // justify-content: space-between;
+      padding: 10px;
+      align-items: center;
+      gap: 10px;
+      .plusIcon{
+        path{
+          color: #07be93;
+        }
+      }
+      .minusIcon{
+        path{
+          color: red;
+        }
+      }
+    }
+    .listStyleFont14{
+      font-size: 14px;
+      padding-top: 8px;
+    }
+    .paddingLeft10{
+      padding-left: 10px;
+    }
+    .paddingLeft22{
+      padding-left: 22px;
+    }
+    .listStyleOption{
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .noRecordClass{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin-top: 30px;
+    }
+    table {
+        border-spacing: 0;
+        margin-top: 10px;
+        border-collapse: collapse;
+      }
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border: 1px solid  #abb0b3;
+        margin-top: 10px !important;
+        border-collapse: collapse;
+        border-spacing: 0;
+        font-size: 12px;
+      }
+  }
+}
+}
+

@@ -1,0 +1,32 @@
+.tableWrapperMain {
+  .redrow {
+    :global(.ant-table-cell) {
+      background-color: #ffcdcc !important;
+      *{
+        color: #121212;
+      }
+    }
+    &:hover{
+      td{
+        background-color: #ffcdcc !important
+  
+      }
+    }
+  }
+  .BackRow {
+    :global(.ant-table-cell) {
+      background-color: #e3f8ff !important;
+      *{
+        color: #121212;
+      }
+    }
+    &:hover {
+      td {
+        background-color: #e3f8ff !important;
+      }
+    }
+  }
+  //   :global(.ant-table-row:hover>td) {
+  //     background: green !important;
+  // }
+}

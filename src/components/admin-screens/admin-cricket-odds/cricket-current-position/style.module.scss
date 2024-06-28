@@ -1,0 +1,53 @@
+.tableWrapperMain {
+  .redrow {
+    :global(.ant-table-cell) {
+      background-color: #ffcdcc !important;
+      *{
+        color: #121212;
+      }
+    }
+    &:hover{
+      td{
+        background-color: #ffcdcc !important
+  
+      }
+    }
+  }
+  .BackRow {
+    :global(.ant-table-cell) {
+      background-color: #e3f8ff !important;
+      *{
+        color: #121212;
+      }
+    }
+    &:hover {
+      td {
+        background-color: #e3f8ff !important;
+      }
+    }
+  }
+  //   :global(.ant-table-row:hover>td) {
+  //     background: green !important;
+  // }
+}
+.yesNoBoxes{
+  border: 1px solid var(--fontColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+  &:hover{
+    background-color: #FFB2AF;
+  }
+};
+.yesNoValBoxes{
+  border: 1px solid var(--fontColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+};

@@ -1,0 +1,143 @@
+@import "@assets/styles/light-dark-theme";
+.mainWrapper {
+  padding: 0px 10px;
+
+  .mainHeading{
+    width: 60%;
+    font-size: 30px;
+    @media screen and (max-width:650px) {
+      font-size: 18px;
+    }
+  }
+  .FlexWraperForGame{
+    gap: 10px;
+    flex-wrap: wrap;
+    cursor: pointer;
+   
+   .imageContainer {
+    position: relative;
+    display: inline-block;
+    border: 1px solid gray;
+    border-radius: 2px;
+    width: 100%;
+   }
+  .textOverlay {
+     background-color: transparent;
+    color: white;
+    gap: 10px;
+    margin-bottom: 3px;
+    :global(.anticon){
+      font-size: 18px;
+      position: absolute;
+      bottom: 1px;
+      svg{
+        path{
+          color:rgb(49, 122, 250, .7) !important;
+        }
+      }
+    }
+  }
+  
+  .textOverlay p {
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.searchBarCol{
+  .searchWrapper{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    .searchBtn{
+      height: 30px;
+    }
+  }
+  .searchBar{
+    height: unset !important;
+    border: 1px solid #184b74;
+  }
+}
+.firstDropdown{
+  height: 100%;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  padding: 6px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  :global(.ant-space-item){
+    color: #121212;
+    span{
+      svg{
+        fill: #121212;
+      }
+    }
+  }
+}
+:global(.ant-empty-description){
+  color: var(--fontColor);
+}
+}
+.btnStyle{
+  color: #ffff;
+}
+.commonSelectBox{
+  :global(.ant-select-selector){
+    border : 1px solid #184b74 !important;
+  width: 200px !important;
+  height: 29px !important;
+  :global(.ant-select-selection-item){
+    color: #000;
+   }
+  }
+  :global(.ant-select-arrow){
+    span{
+      svg{
+        fill: #000 !important;
+      }
+    }
+  }
+}
+.dashboardSelect{
+  :global(.ant-select-selector){
+  border : 1px solid #184b74 !important;
+  width: 150px !important;
+  height: 29px !important;
+  :global(.ant-select-selection-item){
+    color: #000;
+    }
+  }
+  :global(.ant-select-arrow){
+    span{
+      svg{
+        fill: #000 !important;
+      }
+    }
+  }
+}
+
+.loadMoreClass{
+  display: flex;
+  justify-content: center;
+  width:100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  :global(.ant-btn-default:disabled){
+    background-color:var(--cardBg)!important;
+    border: 1px solid var(--fontColor);
+    div{
+     color: var(--fontColor);
+    }
+   }
+}
+.antIconClass{
+  font-size: 30px;
+  color: var(--fontColor);
+  padding-right: 10px;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  text-align: center;
+}

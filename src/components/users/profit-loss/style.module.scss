@@ -1,0 +1,134 @@
+@import "@assets/styles/colors";
+
+.mainWrapper {
+   padding: 15px;
+};
+.clickAble {
+  color: #00b181;
+  font-weight: bold;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+    color: #00b181;
+    font-weight: bold;
+  }
+}
+.gameNameWithAmount{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  gap: 15px;
+  &::-webkit-scrollbar {
+    height: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--titleBarRightBg);
+  }
+  .gameName{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+}
+.dateSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 15px;
+  .datePickerOne {
+    max-width: 223px;
+  }
+}
+.flexAndGapClass{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    :global(.react-datetime-picker__clock){
+      display: none !important;
+    }
+    :global(.react-datetime-picker__clear-button) {
+      display: none !important;
+    }
+    :global(.react-datetime-picker__inputGroup){
+      *{
+        color: #121212!important
+      }
+    }
+    :global(.react-datetime-picker__wrapper){
+      height: 29px;
+      padding: 0px 10px;
+      background-color: #ffff;
+      border-radius: 5px;
+    }
+    :global(.react-calendar){
+      background-color: var(--cardBg)!important;
+      *{ background-color: var(--cardBg)!important;
+      }
+      &:hover{
+       *{ background-color: var(--cardBg)!important;
+      }
+    }
+    }
+}
+.betsBtnMainContainer {
+    width: 100%;
+    margin: auto;
+
+    @media screen and (max-width: 350px) {
+      width: 100%;
+    }
+    .betsBtnMain {
+      background-color: var(--cardBg);
+      display: flex;
+      min-height: auto;
+      align-items: center;
+      font-size: 16px;
+      border: none;
+      @media screen and (max-width: 1128px) and (min-width: 577px) {
+        padding: 5px;
+      }
+      @media only screen and (max-width: 576px) {
+        display: flex;
+        flex-direction: column-reverse;
+        max-width: 100%;
+        margin: auto;
+      }
+      .addBetsizeLoginBtn {
+        font-size: 10px;
+
+        @media only screen and (max-width: 576px) {
+          overflow-wrap: anywhere;
+          margin-bottom: 15px;
+        }
+      }
+
+      .userName {
+        color: var(--fontColor);
+        text-align: right;
+        margin-right: 20px;
+
+        @media only screen and (max-width: 425px) {
+          flex-wrap: wrap;
+          overflow-wrap: anywhere;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .btnStyle{
+    color: #ffff;
+  }
+  .calenderIcon{
+    font-size: 17px;
+    @media only screen and (max-width: 500px) {
+      font-size: 15px;
+    }
+        path{
+          color: #121212;
+        }
+  }

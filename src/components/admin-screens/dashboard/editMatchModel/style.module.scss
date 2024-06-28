@@ -1,0 +1,105 @@
+.antModalPlaceBet {
+  :global(.ant-btn-default:disabled){
+    background-color:var(--cardBg)!important;
+    border: 1px solid var(--fontColor);
+    div{
+     color: var(--fontColor);
+    }
+   }
+   :global(.ant-select-selector){
+    height: 32px !important;
+   }
+.matchWrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  font-size: 16px;
+}
+.centerClassWithMargin{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  align-items: center;
+  .commonSelectBox{
+    width: 70% !important;
+    // .ant-select-selector{
+    //   width: 60% !important;
+    //   height: 32px !important;
+    // }
+  }
+}
+.btnStyle{
+  color: #ffff;
+}
+
+.titleBar{
+  // width: 100%;
+  height: 40px;
+  color: var(--fontColorWithBg);
+  background-color: var(--titleBarBg);
+  padding: 3px 3px 3px 10px ;
+  font-size: 16px !important;
+  border-radius: 5px;
+  margin-top: 5px;
+  border-bottom: 1px solid var(--titleBarBorder);
+  h4{
+      font-size: 16px !important;
+      
+  }
+}
+  :global(.ant-modal-content) {
+    background-color: var(--cardBg);
+    min-height: max-content;
+    padding-bottom: 20px;
+  }
+}
+.chottaBarraWrapper{
+  background-color: var(--sideBarTabHover);
+  font-size: 12px;
+  width: 70px;
+  box-shadow: 0 0 6px 3px gray;
+  transition: box-shadow 0.2s ease-in-out;
+  cursor: pointer;
+  &:hover{
+  box-shadow: 0 0 8px 6px gray;
+  }
+  .bgcolor{
+    background-color: var(--titleBarLeftBg);
+  }
+  .secondBgColor{
+    background-color: var(--titleBarRightBg);
+  }
+  div{
+    // padding: 10px;
+    // width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #121212 !important;
+    span{
+      color: #000;
+      color: #121212 !important;
+      // font-size: 16px;
+      @media screen and (max-width: 450px) {
+        font-size: 13px;
+      }
+    }
+    span{
+      color: #121212 !important;
+      color: #000;
+      // font-weight: 700;
+      // font-size: 18px;
+      @media screen and (max-width: 450px) {
+        font-size: 16px;
+      }
+    }
+  }
+}
+.iconForTable{
+  font-size: 14px !important;
+ path{
+  color: #121212 !important;
+ }
+}

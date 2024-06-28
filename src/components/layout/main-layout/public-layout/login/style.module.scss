@@ -1,0 +1,290 @@
+@import "@assets/styles/colors";
+
+.loginPageContainerOne {
+  background-image: url("../../../../../assets/images/login-bg.webp");
+  @media only screen and (max-width: 425px) {
+      background-image: none;
+    }
+
+  .loginPageWrapper {
+    background-image: url("../../../../../assets/images//login-bg-dark2.webp");
+    @media only screen and (max-width: 425px) {
+      min-width: 90%;
+      margin: 0px 0px;
+      border-radius: 0px;
+    }
+    .ourPoliciesBtn {
+      // background: linear-gradient(
+      //   180deg,
+      //   #0f6b55 0%,
+      //   #0f6b55 49.99%,
+      //   #095845 50%,
+      //   #095845 100%
+      // );
+      background-color: #FAFF05;
+      border-radius: 10px;
+      border: 0px;
+      width: 100%;
+      margin-top: 10px !important;
+      height: 50px;
+         @media only screen and (max-width: 425px) {
+          height: 40px !important;
+        }
+
+      div {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        color: #121212;
+        font-size: 12px;
+        line-height: 24px;
+        text-align: center;
+        text-transform: uppercase;
+        @media only screen and (max-width: 425px) {
+          font-size: 12px !important;
+        }
+      }
+
+      div:hover {
+        color: white;
+      }
+    }
+    @media only screen and (max-width: 425px) {
+      .ourPoliciesBtn {
+        width: 95%;
+        margin: auto;
+        height: 67px;
+      }
+    }
+
+    .loginPanelForm {
+      .loginBtn {
+        background-color: #FAFF05;
+        div{
+        color: #121212;
+        }
+      }
+      input::placeholder {
+        color: white;
+      }
+      :global(.ant-form-item-control) {
+        :global(.ant-form-item-explain-error) {
+          color: var(--formItemExplainError);
+        } 
+      }
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    .loginPageWrapper {
+      min-height: 700px;
+
+    }
+    .loginPageWrapper {
+      width: 88%;
+
+      .logoLogin {
+        margin: 10px 0px;
+        width: 25%;
+        height: auto;
+      }
+    }
+  }  
+
+}
+
+//////// Login Page Container Two ////////
+
+.loginPageContainerTwo {
+  background-image: url("../../../../../assets/images/login-bg.webp");
+  @media only screen and (max-width: 425px) {
+      background-image: none;
+    }
+
+  .loginPageWrapper {
+    background-image: url("../../../../../assets/images/blue-login-bg.webp");
+    @media only screen and (max-width: 425px) {
+    min-width: 91%;
+    margin: 0px 0px;
+    border-radius: 0px;
+    }
+    .ourPoliciesBtn {
+      // background: linear-gradient(
+      //   180deg,
+      //   #160020 0%,
+      //   #160020 49.99%,
+      //   #160020 50%,
+      //   #160020 100%
+      // );
+      background: #AF0000;
+      border-radius: 10px;
+      border: 0px;
+      width: 100%;
+      margin-top: 10px !important;
+      height: 50px;
+         @media only screen and (max-width: 425px) {
+          height: 40px !important;
+        }
+
+      div {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        color: white;
+        font-size: 12px;
+        line-height: 24px;
+        text-align: center;
+        text-transform: uppercase;
+        @media only screen and (max-width: 425px) {
+          font-size: 12px !important;
+        }
+      }
+
+      div:hover {
+        color: white;
+      }
+    }
+    @media only screen and (max-width: 425px) {
+      .ourPoliciesBtn {
+        width: 95%;
+        margin: auto;
+        height: 67px;
+      }
+    }
+
+    .loginPanelForm {
+      .loginBtn {
+        background: #AF0000;
+      }
+      input::placeholder {
+        color: white;
+      }
+
+      :global(.ant-form-item-control) {
+        :global(.ant-form-item-explain-error) {
+          color: var(--formItemExplainError);
+        } 
+      }
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    .loginPageWrapper {
+      min-height: 700px;
+    }
+    .loginPageWrapper {
+      width: 88%;
+
+      .logoLogin {
+        margin: 10px 0px;
+        width: 25%;
+        height: auto;
+      }
+    }
+  }
+  
+  
+}
+
+
+//////// Login Page Container Three ////////
+
+.loginPageContainerThree {
+  background-image: url("../../../../../assets/images/login-bg.webp");
+  @media only screen and (max-width: 425px) {
+      background-image: none;
+    }
+
+  .loginPageWrapper {
+    // background-image: url("../../../../../assets/images/grey-login-bg.webp");
+    background-color: #000000;
+    @media only screen and (max-width: 425px) {
+    min-width: 91%;
+    margin: 0px 0px;
+    border-radius: 0px;
+    }
+    .ourPoliciesBtn {
+      // background: linear-gradient(
+      //   180deg,
+      //   #DF5A6A 0%,
+      //   #DF5A6A 49.99%,
+      //   #DF5A6A 50%,
+      //   #DF5A6A 100%
+      // );
+      // background: #00A826;
+      background: #00a826;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+      border-radius: 10px;
+      border: 0px;
+      width: 100%;
+      margin-top: 10px !important;
+      height: 50px;
+         @media only screen and (max-width: 425px) {
+          height: 40px !important;
+        }
+
+      div {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        color: white;
+        font-size: 12px;
+        line-height: 24px;
+        text-align: center;
+        text-transform: uppercase;
+        @media only screen and (max-width: 425px) {
+          font-size: 12px !important;
+        }
+      }
+
+      div:hover {
+        color: white;
+      }
+    }
+    @media only screen and (max-width: 425px) {
+      .ourPoliciesBtn {
+        width: 95%;
+        margin: auto;
+        height: 67px;
+      }
+    }
+
+    .loginPanelForm {
+      .loginBtn {
+        background: #00a826;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+      }
+      input::placeholder {
+        color: white !important;
+      }
+
+      :global(.ant-form-item-control) {
+        :global(.ant-form-item-explain-error) {
+          color: var(--formItemExplainError);
+        } 
+      }
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    .loginPageWrapper {
+      min-height: 700px;
+    }
+    .loginPageWrapper {
+      width: 88%;
+
+      .logoLogin {
+        margin: 10px 0px;
+        width: 25%;
+        height: auto;
+      }
+    }
+  }
+
+}
+input:-webkit-autofill{
+  transition: background-color 500000s ease-in-out 1000s, color 500000s ease-in-out !important;
+  -webkit-transition-delay: 9999s;
+  color: #fff !important; 
+  // display: none  !important;    
+}

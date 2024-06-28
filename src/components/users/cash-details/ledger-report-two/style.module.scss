@@ -1,0 +1,307 @@
+@import "@assets/styles/colors";
+
+.mainWrapper {
+  padding: 15px;
+
+  .inputcolor {
+    color: #121212;
+  }
+}
+.titleBar {
+  width: 100%;
+  color: var(--fontColorWithBg);
+  background-color: var(--titleBarBg);
+  padding: 5px 0px 5px 10px;
+  margin-top: 5px;
+  border-bottom: 1px solid var(--titleBarBorder);
+  *{
+    gap: 0px !important;
+  }
+  h4 {
+    font-size: 17px !important;
+    margin: 0;
+    font-weight: 600;
+    color: var(--fontColorWithBg);
+    @media only screen and (max-width: 500px) {
+      font-size: 15px;
+    }    
+  }
+}
+.FlexClass {
+  display: flex;
+}
+.paddingLeftClass {
+  padding-left: 20px;
+}
+.gapClass {
+  gap: 5px;
+}
+.flexAndGapClass {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  .mainContaierofInput {
+    display: flex;
+    border-radius: 5px;
+  }
+  :global(.react-datetime-picker__clock) {
+    display: none !important;
+  }
+  :global(.react-datetime-picker__clear-button) {
+    display: none !important;
+  }
+  :global(.react-datetime-picker__inputGroup) {
+    * {
+      color: #121212 !important;
+    }
+  }
+  :global(.react-datetime-picker__wrapper) {
+    height: 29px;
+    padding: 0px 10px;
+    background-color: #ffff;
+    border-radius: 5px;
+  }
+  :global(.react-calendar) {
+    background-color: var(--cardBg) !important;
+    * {
+      background-color: var(--cardBg) !important;
+    }
+    &:hover {
+      * {
+        background-color: var(--cardBg) !important;
+      }
+    }
+  }
+}
+.FlexClass {
+  display: flex;
+}
+.colorClass {
+  color: var(--fontColorWithBg);
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  margin: 0px !important;
+  @media only screen and (max-width: 500px) {
+    font-size: 15px !important;
+  }
+}
+.titlebar {
+  background-color: var(--titleBarBg);
+  border-radius: 5px;
+}
+.inputHeight {
+  min-height: 25px;
+  border-radius: 5px;
+  padding-left: 5px;
+  color: #121212 !important;
+  border: 1px solid #184b74;
+}
+.inputColor {
+  color: #121212 !important;
+}
+.entriesData {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  .commonSelectBox {
+    width: 300px !important;
+    height: 25px;
+  }
+}
+.betsBtnMainContainer {
+  width: 100%;
+  margin: auto;
+  @media screen and (max-width: 350px) {
+    width: 100%;
+    // margin-left: 12px;
+  }
+  .betsBtnMain {
+    background-color: var(--cardBg);
+    display: flex;
+    min-height: auto;
+    align-items: center;
+    font-size: 16px;
+    border: none;
+    // border-radius: 15px;
+    @media screen and (max-width: 1128px) and (min-width: 577px) {
+      padding: 5px;
+    }
+    @media only screen and (max-width: 576px) {
+      display: flex;
+      flex-direction: column-reverse;
+      max-width: 100%;
+      margin: auto;
+    }
+    .addBetsizeLoginBtn {
+      font-size: 10px;
+      @media only screen and (max-width: 576px) {
+        overflow-wrap: anywhere;
+        margin-bottom: 15px;
+      }
+    }
+    .userName {
+      color: var(--fontColor);
+      text-align: right;
+      margin-right: 20px;
+
+      @media only screen and (max-width: 425px) {
+        flex-wrap: wrap;
+        overflow-wrap: anywhere;
+        font-size: 14px;
+      }
+    }
+  }
+}
+.btnStyle {
+  color: #ffff;
+}
+.searchBarMain {
+  padding-top: 15px;
+  .searchTitleBar {
+    display: flex;
+    border: var(--cardBorder);
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    background: var(--titleBarBg);
+    color: var(--fontColorWithBg);
+    width: auto;
+    padding: 5px 0 5px 10px;
+    h4{
+      margin: 0;
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--fontColorWithBg);
+      @media only screen and (max-width: 500px) {
+        font-size: 15px;
+      }
+    }
+    .filterIcon {
+      font-size: 17px;
+      @media only screen and (max-width: 500px) {
+        font-size: 15px;
+      }
+      path {
+        color: var(--fontColorWithBg);
+      }
+    }
+  }
+  .searchUserText {
+    font-size: 20px;
+    color: var(--fontColorWithBg);
+    @media only screen and (max-width: 415px) {
+      font-size: 15px;
+    }
+  }
+}
+.calenderIcon{
+  font-size: 17px;
+  @media only screen and (max-width: 500px) {
+    font-size: 15px;
+  }
+      path{
+        color: #121212;
+      }
+}
+
+.ledgerReportData{
+  color: var(--filledBtnColorNew);
+}
+
+.tableWrapperClass{
+  background-color: var(--cardBg);
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 5px;
+.newtable{
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+ 
+  .userNameWrapper{
+    display: flex;
+    // justify-content: space-between;
+    // padding: 10px;
+    align-items: center;
+    gap: 10px;
+    .plusIcon{
+      path{
+        color: #07be93;
+      }
+    }
+    .minusIcon{
+      path{
+        color: red;
+      }
+    }
+  }
+  .listStyleFont14{
+    font-size: 14px;
+    padding: 4px 0px;
+  }
+  // .paddingLeft10{
+  //   // padding-left: 10px;
+  // }
+  .paddingLeft22{
+    padding-left: 22px;
+  }
+  .listStyleOption{
+    display: flex;
+    gap: 6px;
+    white-space: nowrap;
+    align-items: center;
+    // flex-wrap: wrap;
+  }
+  .noRecordClass{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+  }
+  table {
+      border-spacing: 0;
+      margin-top: 10px;
+      border-collapse: collapse;
+    }
+  th, td {
+      padding: 3px;
+      text-align: left;
+      border: 1px solid  #abb0b3;
+      // margin-top: 10px !important;
+      border-collapse: collapse;
+      border-spacing: 0;
+      font-size: 12px;
+    }
+}
+}
+.theadColor {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: var(--headerBgV2);
+  color: var(--sideBarFontColorV2);
+  border-radius: 5px;
+  padding: 1px;
+  th{
+    padding: 4px;
+    color: var(--sideBarFontColorV2);
+  }
+}
+.clickAble {
+  color: #00b181;
+  font-weight: bold;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.antIconClass{
+  font-size: 30px;
+  color: var(--fontColor);
+  // padding-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}

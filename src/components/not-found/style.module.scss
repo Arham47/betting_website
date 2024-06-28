@@ -1,0 +1,34 @@
+@import "@assets/styles/light-dark-theme";
+.mainWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    padding: 5px;
+    h4{
+        margin: 0px;
+        font-size: 8rem;
+        font-family: emoji;
+        color: var(--fontColor);
+        text-align: center;
+        @media screen and (max-width: 650px) {
+            font-size: 4rem;
+        }
+    }
+    p{
+        font-size: 2rem;
+        margin: 0px;
+        color: var(--fontColor);
+        text-align: center;
+        @media screen and (max-width: 650px) {
+            font-size: 1rem;
+        }
+        &:nth-child(3) {
+            text-transform: uppercase;
+            margin-top: 10px;
+            text-align: center;
+          }
+    }
+} 

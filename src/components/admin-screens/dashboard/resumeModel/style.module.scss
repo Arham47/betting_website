@@ -1,0 +1,42 @@
+.antModalPlaceBet {
+  .footerBtnWrapper {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  :global(.ant-modal-close-x) {
+    display: none;
+  }
+.matchWrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  font-size: 16px;
+}
+.centerClassWithMargin{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  align-items: center;
+  .commonSelectBox{
+    width: 70% !important;
+    :global(.ant-select-selector){
+      width: 60% !important;
+    }
+  }
+}
+.btnStyle{
+  color: #ffff;
+}
+  :global(.ant-modal-content) {
+    background-color: var(--cardBg);
+    min-height: max-content;
+    padding-bottom: 20px;
+  }
+  .descriptionClass{
+    font-size: 17px;
+  }
+}

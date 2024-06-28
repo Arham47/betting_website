@@ -1,0 +1,26 @@
+
+.selectedButton {
+    padding: 7px;
+    margin-bottom: 10px;
+
+    font-weight: bold;
+    color: black;
+    background-color: #ffe000;
+    border-radius: 8px;
+    margin-right: 2px;
+    cursor: pointer; 
+}
+  
+
+.customButton {
+    margin-bottom: 10px;
+    padding: 7px;
+  background-color: rgb(75, 73, 5);
+    font-weight: bold;
+    color: black;
+    // background-color: rgb(97, 97, 9);
+    border-radius: 8px;
+    margin-right: 2px;
+    cursor: pointer; 
+    
+}

@@ -1,0 +1,188 @@
+@import "@assets/styles/colors";
+
+// .statusCardContainer {
+//   width: 100%;
+//   background-color: var(--cardBg);
+//   border: 1px solid var(--cardBorder);
+//   border-radius: 20px;
+
+// .iconColContainer {
+
+//   .iconContainer {
+//     width: 92px;
+//     height: 92px;
+//     background: var(--cardIconBg);
+//     border-radius: 20px;
+//     display: flex;
+//     align-items: center;
+//     gap: 10px;
+
+//     img {
+//       width: 55px;
+//       height: auto;
+//       margin: auto;
+//     }
+
+//     @media only screen and (max-width: 425px) {
+//       width: 62px;
+//       height: 62px;
+
+//       img {
+//         width: 40px;
+
+//       }
+//     }
+
+//   }
+//   @media only screen and (max-width: 425px) {
+//     display: flex;
+//     flex-direction: column;
+//     align-self: center;
+//   }
+// }
+
+//   .cardTextContainer {
+//     p {
+//       color: var(--fontColor);
+//       opacity: 0.8;
+//       font-weight: 400;
+//       font-size: 1rem;
+//       margin-bottom: 5px;
+//     }
+
+//     span {
+//       font-size: 1.5rem;
+//       color: var(--fontColor);
+//       font-weight: 600;
+//     }
+
+//     @media only screen and (max-width: 425px) {
+
+//       display: flex;
+//       flex-direction: column;
+//       align-self: center;
+
+//       p {
+//         font-size: 12px;
+
+//       }
+
+//       span {
+//         font-weight: 300;
+
+//       }
+
+//     }
+
+//   }
+
+//   .statusCardRow {
+//     display: flex;
+//     flex-direction: row;
+//     // gap: 20px;
+//   }
+// }
+
+@import "@assets/styles/colors";
+
+.specialSectionHeader {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  font-family: Verdana;
+  height: 100px;
+  position: relative;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.specialSectionHeader .specialSectionHeaderLabel {
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: var(--titleBarLeftBg);
+  color: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 1;
+  flex: 1;
+  -ms-flex-pack: right;
+  font-size: 12px;
+  line-height: 16px;
+  margin-right: 22px;
+  padding: 0 10px;
+  position: relative;
+  .titleHead{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    justify-content: center;
+    span{
+      color: #fff;
+      font-size: 25px;
+      @media only screen and (max-width: 500px) {
+        font-size: 18px;
+      }
+      // padding-left: 6px;
+    }
+  }
+}
+
+.specialSectionHeader .specialSectionHeaderPromotion {
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: var(--titleBarRightBg);
+  color: #00143c;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 0.2;
+  flex: 0.2;
+  -ms-flex-pack: right;
+  justify-content: right;
+  padding-right: 10px;
+  position: relative;
+  text-align: right;
+}
+
+.specialSectionHeader .specialSectionHeaderPromotion::before {
+  border-bottom: 100px solid var(--titleBarRightBg);
+  border-left: 20px solid transparent;
+  content: "";
+  height: 0;
+  position: absolute;
+  right: 100%;
+  // top: 0;
+  width: 0;
+  bottom: 0;
+}
+
+.specialSectionHeader .specialSectionHeaderPromotion .promotionLabel {
+  font-size: 25px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--filledBtnColorNew);
+}
+.specialSectionHeader .specialSectionHeaderLabel::after {
+  border-right: 20px solid transparent;
+  border-top: 100px solid var(--titleBarLeftBg);
+  content: "";
+  height: 0;
+  left: 100%;
+  position: absolute;
+  top: 0;
+  width: 0;
+}
+
+.labelIcon{
+  padding-right: 6px;
+  svg{
+    fill: #fff;
+    font-size: 30px;
+    @media only screen and (max-width: 500px) {
+      font-size: 22px;
+    }
+  }
+}

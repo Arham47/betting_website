@@ -1,0 +1,22 @@
+
+  .fakeBetWrapper{
+
+    width: 100%;
+  }
+  .statusCard{
+    width: 390px;
+    margin-left: 10px;
+    background-color: #ececed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    @media screen and (max-width:890px) {
+      width: 124px;
+      margin-left: 14px;
+    }
+    span{
+      color: red;
+      font-size: 1rem;
+    }
+  }

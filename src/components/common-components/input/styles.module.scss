@@ -1,0 +1,139 @@
+@import '@assets/styles/colors';
+
+
+.customInput {
+  display: flex;
+  position: relative;
+  width: 100%;
+  :global(.ant-input-affix-wrapper) {
+    &:global(.ant-input-password) {
+      &.roundInput {
+        // margin-bottom: 10px;
+      }
+    }
+  }
+
+  input,
+  .roundInput {
+    border-radius: 4px;
+    font-weight: 400;
+    margin: 1px;
+    transition: 0.3s all ease-in-out;
+    width: 100%;
+    border-color: 1px;
+
+    &:hover {
+      border-color: #00c5fb;
+      outline: none;
+      transition: 0.3s all ease-in-out;
+    }
+
+    &:focus,
+    &:active,
+    &:visited {
+      border-color: #00c5fb;
+      border-right-width: 1px;
+      box-shadow: 0 3px 10px rgb(0 0 0 / 11%);
+      outline: 0;
+    }
+
+    :global(.ant-form-item-explain-error) {
+      color: blue;
+    }
+  }
+
+  textarea {
+    border-radius: 4px;
+    margin: 1px;
+    padding: 5px 10px;
+    transition: 0.3s all ease-in-out;
+    width: 100%;
+    padding-top: 15px;
+
+    &:hover {
+      border-color: #00c5fb important;
+      outline: none;
+      transition: 0.3s all ease-in-out;
+    }
+
+    &:focus,
+    &:active,
+    &:visited {
+      border-color: #00c5fb;
+      border-right-width: 1px;
+      box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+      outline: 0;
+    }
+
+    .roundInput {
+      border-radius: 100px;
+    }
+  }
+
+  .inputNumber {
+    border: 0;
+    width: 100%;
+
+    input {
+      height: 100%;
+      position: absolute;
+      top: 0;
+      border: 1px solid #d9d9d9;
+    }
+  }
+
+  :global(.ant-input-disabled) {
+    background-color: white;
+  }
+
+}
+
+.light {
+  background-color: #f2f2f5;
+  border: 1px solid #f2f2f5;
+  color: #333;
+}
+
+.dark {
+  background: var(--darkInputBg);
+  border: 1px solid rgba(255, 242, 242, 0.38);
+  
+  :global(.ant-input) {
+    background-color: rgba(255, 255, 255, 0.0);
+    border-radius: 5px;
+    color: var(--fontColorWithBg);
+
+
+  }
+
+
+
+
+}
+
+.transparent {
+  background-color: transparent;
+  border: 1px solid;
+  color: #a3a4a4;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+:global(.ant-form-item-control) {
+
+  :global(.ant-form-item-explain-error) {
+    color: default;
+  }
+}
+
+

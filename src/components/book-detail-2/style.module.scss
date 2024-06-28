@@ -1,0 +1,196 @@
+@import "@assets/styles/light-dark-theme";
+.mainContainer {
+    .container {
+      padding: 20px;
+      padding-bottom: 8px;
+      @media screen and (max-width:650px) {
+        padding: 4px;
+      }
+      .clickAble {
+        color: #00b181;
+        font-weight: bold;
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+          color: #00b181;
+          font-weight: bold;
+        }
+      }
+      .bookDetailTitlebar {
+        margin-top: 10px;
+        border: var(--cardBorder);
+        min-height: 40px;
+      }
+  
+      .dateSection {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        padding: 15px;
+        width: 100%;
+        background-color: var(--cardBg);
+        .datePickerOne {
+          max-width: 223px;
+        }
+      }
+      .flexAndGapClass{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        width: 100%;
+        .mainContaierofInput{
+          display: flex;
+          gap:10px;
+          width: 100%;
+          flex-wrap: wrap;
+          border-radius: 5px;
+        }
+        :global(.react-datetime-picker__clock){
+          display: none !important;
+        }
+        :global(.react-datetime-picker__clear-button) {
+          display: none !important;
+        }
+        :global(.react-datetime-picker__inputGroup){
+          *{
+            color: #121212!important
+          }
+        }
+        :global(.react-datetime-picker__wrapper){
+          height: 29px;
+          padding: 0px 10px;
+          background-color: #ffff;
+          border-radius: 5px;
+        }
+        :global(.react-calendar){
+          background-color: var(--cardBg)!important;
+          *{ background-color: var(--cardBg)!important;
+          }
+          &:hover{
+           *{ background-color: var(--cardBg)!important;
+          }
+        }
+        }
+        .suffixIcon{
+          background-color: #F0F3F5!important;
+            width: 35px;
+            border-radius: 5px;
+          img{
+            margin-top: 3px;
+            padding: 0px 7px;
+          }
+        }
+        }
+  
+      :global(.ant-picker-suffix) {
+        background-color: #929292;
+      }
+      .bookDetailTitlebarTwo{
+        min-height: 30px;
+        border: var(--cardBorder);
+        min-height: 40px;
+      }
+      .mainTableDiv {
+        // display: flex;
+        // flex-direction: row;
+        // gap: 10px;
+        margin-top: 10px;
+        // .gridOne {
+        //   // .totalTable {
+        //   //   // :global(.ant-table-footer) {
+        //   //   //   padding: 0;
+        //   //   //   border-radius: 0;
+        //   //   //   color: #ffff;
+        //   //   //   border: var(--cardBorder);
+        //   //   //   display: flex;
+        //   //   //   justify-content: space-between;
+        //   //   //   align-items: center;
+        //   //   //   background-color: #085845;
+        //   //   // }
+        //   // }
+        // }
+        // .gridTwo {
+
+        //   // .negativeClient {
+        //   //   // :global(.ant-table-footer) {
+        //   //   //   padding: 0;
+        //   //   //   border-radius: 0;
+        //   //   //   color: #ffff;
+        //   //   //   // height: 50px;
+        //   //   //   display: flex;
+        //   //   //   justify-content: space-between;
+        //   //   //   align-items: center;
+        //   //   //   background-color: #F86C6B;
+  
+        //   //   //   .footerTotal {
+        //   //   //     display: flex;
+        //   //   //     width: 100%;
+        //   //   //     flex-direction: row;
+        //   //   //     justify-content: space-between;
+        //   //   //     padding: 5px 10px 5px 10px;
+        //   //   //     h3{
+        //   //   //       color: #fff;
+        //   //   //       margin: 0px;
+        //   //   //     }
+        //   //   //   }
+        //   //   // }
+        //   // }
+        // }
+
+      }
+      .btnDiv{
+        display: flex;
+        padding: 10px;
+        gap: 10px;
+        width: 100%;
+      }
+
+          :global(.ant-table-footer) {
+              padding: 0;
+              border-radius: 0;
+              color: #ffff;
+              border: var(--cardBorder);
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              background-color: #085845;
+            }
+            .finalSheetCheckBoxDiv {
+              display: flex;
+              gap: 10px;
+              align-items: center;
+              .finalSheetCheckBoxLable {
+                color: var(--filledBtnColorNew);
+                font-size: 17px;
+              }
+            }
+    }
+  }
+  .btnStyle{
+    color: #ffff;
+  }
+.footerTotal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px 10px 5px 10px;
+  background-color: #085845;
+  h3{
+    color: #fff;
+    margin: 0px;
+    @media screen and (max-width: 500px) {
+      font-size: 9px;
+    }
+  }
+}
+.calenderIcon{
+  font-size: 17px;
+  @media only screen and (max-width: 500px) {
+    font-size: 15px;
+  }
+      path{
+        color: #121212;
+      }
+}

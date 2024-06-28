@@ -1,0 +1,77 @@
+@import "@assets/styles/light-dark-theme";
+.mainWrapper{
+    padding: 10px;
+    @media screen and (max-width:400px) {
+        padding: 4px;  
+    };
+    .searchEntriesWrapper{
+        align-items: center;
+        @media screen and (max-width:600px) {
+            justify-content: center;
+        }
+        .entriesData {
+            display: flex;
+            gap: 5px;
+            padding-left: 10px;
+            align-items: center;
+            padding-top: 10px;
+            select {
+              height: 25px !important;
+            }
+            .inputHeight {
+              min-height: 25px;
+              border-radius: 5px;
+              padding-left: 5px;
+              color: #121212 !important;
+              border: 1px solid #184b74;
+            }
+            .inputColor {
+              color: #121212 !important;
+            }
+          }
+    }
+    .searchBarButtunCard {
+        background-color: var(--cardBg);
+        margin-bottom: 20px;
+        border: var(--cardBorder);
+  
+        .searchBarCol {
+          display: flex;
+          :global(.ant-input-affix-wrapper){
+            height: 35px !important;
+            border: 1px solid #184b74;
+            input{
+          align-items: center;
+          display: flex;
+            }
+          }
+          .searchBarButton {
+            margin: 20px 10px;
+            align-items: inside;
+            :global(.ant-input-search-button) {
+              padding: 10px 5px;
+              display: flex;
+              align-items: center;
+              height: 33px !important;
+            //   color:#fff;
+              background-color: var(--titleBarRightBg);
+              span{
+                svg{
+                    fill: var(--filledBtnColorNew);
+                }
+              }
+              div{
+                color: var(--filledBtnColorNew);
+              }
+            }
+          }
+        }
+      }
+} 
+.rightRibbonRecord{
+  color: var(--filledBtnColorNew);
+  font-size: 16px;
+  @media screen and (max-width: 500px) {
+    font-size: 12px;
+  }
+}

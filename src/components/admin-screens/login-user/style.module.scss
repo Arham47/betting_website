@@ -1,0 +1,65 @@
+@import "@assets/styles/light-dark-theme";
+.mainWrapper{
+   padding: 10px;
+   @media screen and (max-width: 650px) {
+    padding: 4px;
+   } 
+   .searchBarCol {
+    display: flex;
+    :global(.ant-input-affix-wrapper){
+      height: 35px !important;
+      border: 1px solid var(--titleBarRightBg);
+      input{
+    align-items: center;
+    display: flex;
+      }
+    }
+    .searchIcon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .iconSearch {
+        svg {
+        font-size: 17px;
+        @media only screen and (max-width: 500px) {
+          font-size: 15px;
+        }
+          path {
+            color: var(--filledBtnColorNew);
+          }
+        }
+      }
+    }
+
+    .searchBarButton {
+      // margin: 20px 10px;
+      align-items: inside;
+      // padding: 0px
+      ;
+
+      :global(.ant-input-search-button) {
+        padding: 10px 5px;
+        display: flex;
+        align-items: center;
+        height: 35px;
+        background-color: var(--titleBarRightBg)!important;
+        div {
+          color: var(--filledBtnColorNew);
+        }
+      }
+    }
+  }
+  .spinWrapper{
+    display: flex;
+    justify-content: center;
+  }
+}
+.clickAble {
+  color: #00b181;
+  
+  // font-weight: bold;
+  cursor: pointer;
+  &:hover{
+    text-decoration: underline;
+  }
+}

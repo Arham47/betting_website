@@ -1,0 +1,32 @@
+@import "@assets/styles/colors";
+
+.radioThemeSelecting {
+
+  .lightTheme {
+    :global(.ant-radio-inner) {
+      background-color: white;
+      border: 10px solid #faff05;
+    } 
+    :global(.ant-radio-inner::after){
+      background-color: #000c24;
+  }
+  }
+
+  .greyTheme {
+    :global(.ant-radio-inner) {
+      background-color: darkgrey;
+      border: 10px solid #00a826;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    } 
+  }
+
+  .darkTheme {
+    :global(.ant-radio-inner) {
+      background-color: black;
+      border: 10px solid #ffe000;
+    } 
+    :global(.ant-radio-inner::after){
+      background-color: #af0000;
+  }
+  }
+}

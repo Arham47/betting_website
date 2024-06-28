@@ -1,0 +1,57 @@
+@import "@assets/styles/light-dark-theme";
+.btnStyle {
+    color: var(--fontColor);
+}
+.btnStyleOne {
+    color: #fff;
+}
+.resultModal{
+    :global(.ant-modal-content) {
+        background-color: var(--cardBg) !important;
+    color: var(--fontColor);
+    height: fit-content;
+    :global(.ant-modal-title) {
+        color: var(--fontColor);
+        background-color: var(--cardBg);
+    }
+}
+}
+.antIconClass {
+    font-size: 30px;
+    color: var(--fontColor);
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding-bottom: 10px;
+  }
+  .bothBtnWrapper{
+    :global(.ant-btn){
+        *{
+            font-size: 100% !important;
+            font-weight: 500 !important;
+        }
+    }
+    :global(.ant-btn-default:not(:disabled):hover){
+        background-color: var(--titleBarRightBg) !important;
+        border-color: var(--titleBarRightBg) !important;
+        *{
+            color: var(--filledBtnColorNew) !important;
+        }
+    }
+  }
+  .trophyColor{
+    fill: var(--fontColor);
+    padding-left: 4px;
+  }
+  .emptyBox{
+    :global(.ant-empty-description){
+      color: var(--fontColor);
+    }
+  }
+   .rightRibbonRecord{
+    color: var(--filledBtnColorNew);
+    @media screen and (max-width: 500px) {
+      font-size: 0.5rem;
+    }
+  }

@@ -1,0 +1,33 @@
+@import "@assets/styles/light-dark-theme";
+.tableWrapper{
+    .tableWrapperMainAscend{
+        :global(.ant-table-column-sorter-inner){
+            span:first-child{
+                svg{
+                    fill: #0196FD;
+                }
+            }
+        }
+    }
+    .tableWrapperMainDescend{
+        :global(.ant-table-column-sorter-inner){
+            span:last-child{
+                svg{
+                    fill: #0196FD;
+                }
+            }
+        }
+    }
+    // .table{
+    :global(.ant-table-cell) {
+        border: var(--tableBorder);
+        line-height: 17px;
+        background-color: var(--cardBg);
+        padding: 4px !important;
+        // &:hover {
+        //   color: var(--fontColorWithBg);
+        //   background-color: var(--titleBarBg) !important;
+        // }
+      }
+// }
+}

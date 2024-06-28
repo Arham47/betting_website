@@ -1,0 +1,36 @@
+@import "@assets/styles/colors";
+
+.mainWrapper {
+   padding: 15px;
+   .cardWrapperInput{
+    width: 100%;
+    background-color: var(--cardBg)!important;
+    padding: 10px;
+    // margin-top: 10px;
+   }
+   .titleBar{
+    width: 100%;
+    *{
+      gap: 0px;
+    }
+   }
+   .marginTop{
+    margin-top: 20px;
+    :global(.ant-alert-message){
+      color: red;
+    }
+   }
+.btnStyle{
+  color: #ffff;
+}
+.amountInput{
+  height: 32px !important;
+}
+}
+.mainWrapper {
+  @media only screen and (max-width: 650px) {
+  
+      padding: 10px 4px !important;
+    }
+  }
+

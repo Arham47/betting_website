@@ -1,0 +1,893 @@
+@import "@assets/styles/light-dark-theme";
+
+.mainCricketWrraper {
+  padding: 10px;
+  @media screen and (max-width: 600px) {
+    padding: 4px;
+  }
+
+  .antIconClass {
+    font-size: 30px;
+    color: var(--fontColor);
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    width: 100%;
+  }
+
+  .mainRow {
+    background-color: var(--cardBg);
+
+    .mainHeader {
+      color: var(--fontColorWithBg);
+      background-color: var(--titleBarBg);
+      width: 100%;
+
+      .jotaGameMain {
+        padding: 8px;
+        padding-right: 16px;
+        background-color: var(--cardBg);
+
+        .bothWrapper {
+          margin-top: 10px;
+          display: flex;
+          gap: 20px;
+          justify-content: center;
+
+          .jottaMain {
+            width: 30%;
+            margin-bottom: 8px;
+            display: flex;
+            flex-direction: column;
+            @media screen and (max-width: 520px) {
+              width: 60%;
+            }
+
+            h1 {
+              margin: 0px;
+              margin-bottom: 10px;
+              color: var(--fontColor);
+              margin-left: 6px;
+              white-space: nowrap;
+
+              span {
+                font-size: 14px;
+                font-style: italic;
+                color: brown;
+                @media screen and (max-width: 620px) {
+                  font-size: 11px;
+                }
+              }
+            }
+
+            .jottaNewWrapper {
+              display: flex;
+              background-color: var(--sideBarTabHover);
+              font-size: 14px;
+              box-shadow: 0 0 6px 3px gray;
+              transition: box-shadow 0.2s ease-in-out;
+              cursor: pointer;
+
+              &:hover {
+                box-shadow: 0 0 8px 6px gray;
+              }
+
+              div {
+                padding: 10px;
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                span {
+                  color: #000;
+                  font-size: 26px;
+                  @media screen and (max-width: 450px) {
+                    font-size: 13px;
+                  }
+                }
+
+                b {
+                  color: #000;
+                  font-weight: 700;
+                  font-size: 60px;
+                  @media screen and (max-width: 450px) {
+                    font-size: 16px;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+
+
+        .countriesWrapper {
+          // margin-top: 5px;
+          margin-right: 10px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+
+          .iconsWrapper {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            // margin-top: 10px;
+            svg {
+              height: 22px;
+              width: 22px;
+              cursor: pointer;
+              margin-right: 5px;
+              path {
+                color: var(--filledBtnColorNew);
+              }
+            }
+          }
+
+          span {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--filledBtnColorNew);
+          }
+
+          @media screen and (max-width: 990px) {
+            span {
+              font-size: 14px;
+            }
+          }
+        }
+
+        .bothWrapperNew {
+          margin-top: 50px;
+          display: flex;
+          gap: 20px;
+          justify-content: center;
+
+          .jottaMain {
+            width: 30%;
+            margin-bottom: 8px;
+            display: flex;
+            flex-direction: column;
+            @media screen and (max-width: 520px) {
+              width: 60%;
+            }
+
+            h1 {
+              margin: 0px;
+              margin-bottom: 10px;
+              color: var(--fontColor);
+              margin-left: 6px;
+              white-space: nowrap;
+
+              span {
+                font-size: 14px;
+                font-style: italic;
+                color: brown;
+                @media screen and (max-width: 620px) {
+                  font-size: 11px;
+                }
+              }
+            }
+
+            .chottaBarraWrapper {
+              background-color: var(--sideBarTabHover);
+              font-size: 14px;
+              box-shadow: 0 0 6px 3px gray;
+              transition: box-shadow 0.2s ease-in-out;
+              cursor: pointer;
+
+              &:hover {
+                box-shadow: 0 0 8px 6px gray;
+              }
+
+              div {
+                padding: 10px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                span {
+                  color: #000;
+                  font-size: 26px;
+                  @media screen and (max-width: 450px) {
+                    font-size: 13px;
+                  }
+                }
+
+                b {
+                  color: #000;
+                  font-weight: 700;
+                  font-size: 60px;
+                  @media screen and (max-width: 450px) {
+                    font-size: 16px;
+                  }
+                }
+              }
+            }
+
+          }
+        }
+      }
+
+
+      .bettingValWrapper {
+        display: flex;
+        flex-wrap: wrap;
+
+        .mainWrapper {
+          border: 1px solid #000;
+          width: 20%;
+
+          .bettingVal {
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            background-color: #8DD2F0;
+            color: #000;
+          }
+
+          .bettingValBottom {
+            padding: 10px;
+            display: flex;
+            color: #000;
+            justify-content: center;
+            background-color: #e9f6fc;
+          }
+        }
+      }
+
+      .detailsWrraper {
+        display: flex;
+        width: 100%;
+
+        .headerImgWrraper {
+          padding: 4px;
+
+          .cricketImgWrapper {
+            border-radius: 3px;
+            background-color: #00b181;
+            height: 48px;
+            width: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+              height: 28px;
+              width: 28px;
+            }
+          }
+        }
+
+        .timeDetailsWrraper {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+
+          .timeDetilSection {
+            font-weight: bold;
+
+            img {
+              height: 20px;
+              width: 20px;
+              margin-top: 4px;
+              margin-left: 4px;
+            }
+
+            p {
+              margin: 0px;
+              margin-top: 6px;
+              margin-left: 4px;
+              color: var(--fontColorWithBg);
+            }
+          }
+
+          .matchLabel {
+            margin-left: 6px;
+            margin-top: 6px;
+            color: var(--fontColorWithBg);
+          }
+        }
+
+        .countriesWrraper {
+          margin-top: 5px;
+          margin-right: 10px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .iconsWrapper {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            margin-top: 10px;
+
+            svg {
+              height: 22px;
+              width: 22px;
+              color: #faeded !important;
+  
+              path {
+                color: #faeded !important;
+              }
+            }
+          }
+
+          span {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--fontColorWithBg);
+          }
+
+          @media screen and (max-width: 990px) {
+            span {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+
+      // .statusWrraper {
+      //   display: flex;
+      //   justify-content: flex-end;
+      //   align-items: center;
+
+      //   span {
+      //     padding: 8px;
+      //     color: #00b181;
+      //     font-size: 25px;
+      //     font-weight: 600;
+      //     text-transform: uppercase;
+      //     margin-right: 10px;
+      //   }
+      // }
+
+      @media screen and (max-width: 990px) {
+        .statusWrraper {
+          justify-content: flex-start;
+        }
+      }
+
+      @media screen and (max-width: 630px) {
+        .statusWrraper {
+          span {
+            font-size: 20px;
+          }
+        }
+      }
+
+      .scoreSection {
+        background-color: var(--cardBg);
+
+        .mainScoresWrraper {
+          background-color: var(--cardBg);
+          border: var(--cardBorder);
+          color: var(--fontColorWithBg);
+          width: 100%;
+          border: none;
+          display: flex;
+          // margin: 6px;
+          .scoreDetail {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: capitalize;
+
+            .inplayIcoWrapper {
+              background-color: #00b181;
+              height: 20px;
+              width: 20px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              img {
+                width: 14px;
+                height: 14px;
+              }
+            }
+
+            .spanStyle {
+              color: var(--fontColorWithBg);
+              background-color: var(--titleBarBg);
+              padding: 7px;
+              white-space: nowrap;
+              height: 20px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              @media screen and (max-width: 500px) {
+                order: 1;
+              }
+            }
+
+            .tooltipWrraper {
+              padding: 9px;
+              background-color: var(--titleBarBg);
+              margin-left: 4px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 20px;
+              height: 20px;
+
+              span {
+                svg {
+                  fill: var(--fontColorWithBg);
+                }
+              }
+
+              .rulesHead {
+                color: var(--fontColorWithBg);
+                display: none;
+              }
+
+              &:hover {
+                .rulesHead {
+                  display: block;
+                  cursor: pointer;
+                  margin-left: 6px;
+                }
+              }
+            }
+          }
+
+          .scoreNumbersWrraper {
+            padding: 4px;
+
+            .scoreNumberHeader {
+              display: flex;
+              justify-content: flex-end;
+              width: 90%;
+              background-color: var(--sideBarSelectedTabBg);
+              padding: 4px;
+
+              span {
+                color: #ffff;
+              }
+            }
+          }
+
+          @media screen and (max-width: 994px) {
+            flex-direction: column;
+            display: contents;
+          }
+
+          .countriesName {
+            margin-top: 8px;
+
+            span {
+              font-size: 16px;
+              font-size: 600;
+            }
+          }
+        }
+      }
+    }
+
+    .betAndBookWapper {
+      // background-color: var(--titleBarBg);
+      display: flex;
+      // padding: 0px 16px;
+      align-items: center;
+      gap: 5px;
+
+      .betLockDropDown {
+        display: flex;
+        width: max-content;
+      }
+
+      .betLockBtn {
+        flex-direction: row-reverse;
+        gap: 4px;
+      }
+    }
+
+    .tabWrapper {
+      width: 100%;
+
+      .tvWrraper {
+        height: 226px !important;
+        // height: fit-content;
+        iframe {
+          border: 1px solid #abb0b3;
+        }
+      }
+
+      .tvWrraperScore {
+        height: fit-content;
+
+        iframe {
+          border: 1px solid #abb0b3;
+        }
+      }
+
+      // .tableHeader {
+      //   gap: 0px;
+      //   padding: 25px 4px;
+
+      //   h4 {
+      //     padding: 4px;
+      //     font-size: 14px;
+      //     font-size: 400;
+      //   }
+      // }
+    }
+
+    .mainTvWrraper {
+      background-color: var(--cardBg);
+      width: 100%;
+    }
+
+    .tabSize {
+      width: 100%;
+    }
+
+    .eventHeader {
+      background-color: var(--titleBarBg);
+      // padding: 9px 16px;
+      cursor: pointer;
+
+      .mainSpan {
+        font-size: 17px;
+        color: #ffffff;
+        margin: 0;
+        @media only screen and (max-width: 500px) {
+          font-size: 15px;
+        }
+      }
+
+      span {
+        color: rgb(231, 61, 140);
+        padding-left: 4px;
+      }
+
+      .userIcon {
+        padding-left: 4px;
+
+        svg {
+          fill: #ffffff;
+        }
+      }
+    }
+
+    .tableWrapperMain {
+      :global(.ant-table-cell) {
+        padding: 0px !important;
+      }
+    }
+  }
+}
+
+:global(.ant-dropdown) {
+  border: var(--cardBorder);
+
+  .dropDownContent {
+    background-color: var(--cardBg);
+    border: var(--cardBorder);
+    width: 152px;
+    min-height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    div {
+      cursor: pointer;
+
+      p {
+        margin: 5px 25px;
+      }
+    }
+
+    .otherMarkets {
+      border-top: var(--cardBorder);
+    }
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .mainTvWrraper {
+    width: 70%;
+  }
+}
+
+.betLockerModal {
+  :global(.ant-modal-content) {
+    background-color: var(--cardBg);
+    color: var(--fontColor);
+    // height: 298px;
+    height: fit-content;
+
+    :global(.ant-modal-title) {
+      color: var(--fontColor);
+      background-color: var(--cardBg);
+    }
+
+    :global(.ant-modal-body) {
+      .betLockForm {
+        .formContainerBetLockModal {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 5px;
+          margin-bottom: 10px;
+
+          .btnStyle {
+            color: #ffff;
+          }
+        }
+
+        .usersLoaderContainer {
+          width: 100%;
+          height: 180px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+        }
+
+
+        .usersCheckBox {
+          height: 150px;
+          overflow: scroll;
+          padding: 20px 0px;
+          overflow-x: hidden;
+
+          .loadingRef {
+            text-align: center;
+            padding-top: 10px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+
+.btnStyle {
+  color: #fff;
+}
+
+.changeBackground {
+  animation-name: changeBackgroundColor;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes changeBackgroundColor {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: yellow;
+  }
+}
+
+.betStakesWrraper {
+  display: flex;
+  justify-content: space-between;
+  color: var(--fontColorWithBg);
+  background-color: var(--titleBarBg);
+
+  span {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 4px 10px;
+    color: var(--fontColorWithBg);
+  }
+}
+
+.btnStyle {
+  color: #ffff;
+}
+
+.fullBetListTitleBar {
+  gap: 0px;
+  // padding: 0px 16px;
+  display: flex;
+  gap: 10px;
+  color: #ffffff;
+  // background-color: var(--titleBarBg);
+  align-items: center;
+
+  h4 {
+    font-weight: 600;
+    font-size: 17px;
+    color: #ffffff;
+    margin: 0;
+    @media only screen and (max-width: 500px) {
+      font-size: 15px;
+    }
+  }
+}
+
+.tableHeader {
+  padding: 9px 16px;
+
+  * {
+    gap: 0px !important;
+  }
+
+  h4 {
+    font-weight: 600;
+    font-size: 17px;
+    color: var(--fontColorWithBg);
+    margin: 0;
+    @media only screen and (max-width: 500px) {
+      font-size: 15px;
+    }
+  }
+}
+
+.figureBetting {
+  // padding: 9px 16px;
+  h4 {
+    font-weight: 600;
+    font-size: 17px;
+    color: #ffffff;
+    margin: 0;
+    @media only screen and (max-width: 500px) {
+      font-size: 15px;
+    }
+  }
+
+  .userIcon {
+    padding-left: 4px;
+
+    svg {
+      fill: #ffffff;
+      cursor: pointer;
+    }
+  }
+}
+
+.betLockIcon {
+  svg {
+    fill: var(--filledBtnColorNew);
+  }
+}
+
+.zeroCommission {
+  font-size: 14px;
+  font-style: italic;
+  color: brown;
+}
+
+//scorecard
+.scoreWrapper {
+  background-color: var(--titleBarLeftBg);
+  padding: 6px 6px;
+  margin-bottom: 5px;
+
+  span {
+    color: #fff;
+  }
+
+  .timeDetailSection {
+    font-weight: bold;
+    display: flex;
+    gap: 10px;
+  }
+
+  .commentClass {
+    color: #FFD700;
+    margin: 2px;
+    padding: 0 7vw 0 0;
+    font-weight: 800;
+    @media only screen and (max-width: 1822px) {
+      // padding: 0 150px 0 0;
+      padding: 0 8vw 0 0;
+    }
+
+    @media only screen and (max-width: 1122px) {
+      padding: 0 7vw 0 0;
+    }
+    @media only screen and (max-width: 890px) {
+      padding: 0 6vw 0 0;
+    }
+    @media only screen and (max-width: 490px) {
+      font-size: 17px;
+      padding: 0 5px 0 0 !important;
+      // padding: 0 0;
+    }
+    @media only screen and (max-width: 350px) {
+      // font-size: 13px;
+      padding: 0 0px 0 0 !important;
+      // padding: 0 0;
+    }
+
+  }
+
+  .rightSection {
+    display: flex;
+    gap: 1px;
+    align-items: center;
+    flex-direction: column;
+    @media only screen and (max-width: 430px) {
+      max-width: 40%;
+    }
+    @media only screen and (max-width: 330px) {
+      max-width: 30%;
+    }
+  }
+
+  .animateBackground {
+    animation: cardAnimation 2s; //;
+    @media only screen and (max-width: 1822px) {
+      padding: 0 0px 0 0;
+      margin: 0 170px 0 0;
+    }
+    @media only screen and (max-width: 1210px) {
+      padding: 0 0px 0 0;
+      margin: 0 100px 0 0;
+    }
+    @media only screen and (max-width: 890px) {
+      padding: 0 0px 0 0;
+      margin: 0 80px 0 0;
+    }
+    @media only screen and (max-width: 490px) {
+      padding: 0 0px 0 0;
+      margin: 0 5px 0 0;
+
+    }
+    @media only screen and (max-width: 375px) {
+      padding: 0 0px 0 0;
+      margin: 0 0px 0 0;
+    }
+  }
+
+  @keyframes cardAnimation {
+    0% {
+      background-color: #fff;
+
+    }
+    50% {
+      background-color: #fff;
+    }
+    100% {
+      background-color: #fff;
+
+    }
+
+
+  }
+
+  .cardAnimation {
+    animation: cardAnimation 4s; /* Adjust the duration as needed */
+    animation-timing-function: ease-in-out; /* Adjust the timing function as needed */
+  }
+
+  .statusClass {
+    color: #fff;
+    margin: 2px;
+    padding: 0 7vw 0 0;
+    font-weight: 800;
+    text-align: center;
+
+    b {
+      color: #fff !important;
+    }
+
+    @media only screen and (max-width: 1122px) {
+      padding: 0 7vw 0 0;
+    }
+    @media only screen and (max-width: 890px) {
+      padding: 0 1vw 0 0;
+    }
+    @media only screen and (max-width: 490px) {
+      font-size: 13px;
+      padding: 0 1vw 0 0 !important;
+      // padding: 0 0;
+    }
+    @media only screen and (max-width: 350px) {
+      font-size: 12px;
+      padding: 0 0px 0 0 !important;
+      // padding: 0 0;
+    }
+  }
+}

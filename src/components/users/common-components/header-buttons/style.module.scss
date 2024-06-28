@@ -1,0 +1,40 @@
+@import '@assets/styles/colors';
+
+.usersHeaderBtnContainer {
+    width: 100%;
+
+    .btnContainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+
+        .activeButton {
+            // border: 1px solid var(--outlinedBtnBorderHover) !important;
+            box-shadow: var(--titleBarRightBg);
+            background-color: var(--titleBarRightBg);
+            *{
+                color: var(--filledBtnColorNew);
+            }    
+        }
+        .headerButtons{
+            &:hover{           
+                 background-color: var(--titleBarRightBg);
+                 border: 1px solid var(--titleBarRightBg) !important;
+                 *{
+                    color: var(--filledBtnColorNew);
+                }      
+            }
+        }
+
+        @media screen and ( max-width: 1080px ) {
+            justify-content: center;
+        }
+      
+    }
+
+    @media screen and ( min-width: 1070px )  {
+        padding-left: 20px;
+
+    }
+
+}

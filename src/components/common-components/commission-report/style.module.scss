@@ -1,0 +1,139 @@
+.mainContainer {
+  .flexAndGapClass{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    :global(.react-datetime-picker__clock){
+      display: none !important;
+    }
+    :global(.react-datetime-picker__clear-button) {
+      display: none !important;
+    }
+    :global(.react-datetime-picker__inputGroup){
+      *{
+        color: #121212!important
+      }
+    }
+    :global(.react-datetime-picker__wrapper){
+      height: 29px;
+      padding: 0px 10px;
+      background-color: #ffff;
+      border-radius: 5px;
+    }
+    :global(.react-calendar){
+      background-color: var(--cardBg)!important;
+      *{ background-color: var(--cardBg)!important;
+      }
+      &:hover{
+       *{ background-color: var(--cardBg)!important;
+      }
+    }
+    }
+    }
+  .container {
+    padding: 20px;
+    padding-bottom: 8px;
+    @media screen and (max-width:650px) {
+      padding: 4px 0px;
+    }
+    .CommissionReport {
+      margin-top: 10px;
+      border: var(--cardBorder);
+    }
+    
+
+    .dateSection {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      padding: 15px;
+
+    }
+    :global(.ant-picker-suffix) {
+      background-color: #929292;
+    }
+    .mainTableDiv {
+      display: flex;
+      padding: 10px;
+      flex-direction: row;
+      gap: 10px;
+      margin-top: 10px;
+      .gridOne { 
+        // background-color: var(--cardBg);
+        .positiveClient {
+          .userNameHead{
+            color: #00b181;
+            &:hover{
+              cursor: pointer;
+              text-decoration: underline;
+            }
+          }
+          :global(.ant-table-footer) { 
+            padding: 0;
+            border-radius: 0;
+            color: #ffff;
+            border: var(--cardBorder);
+            // height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #085845; 
+            h3{
+              color: #fff;
+            }
+          }
+        }
+      }
+      .gridTwo {
+        width: 100%;
+        .negativeClient {
+          .userNameHead{
+            color: #00b181;
+            &:hover{
+              cursor: pointer;
+              text-decoration: underline;
+            }
+          }
+          :global(.ant-table-footer) {
+            padding: 0;
+            border-radius: 0;
+            // color: var(--fontColorWithBg);
+            border: var(--cardBorder);
+            background-color: #085845;
+            h3{
+              color: #fff;
+            }
+          }
+        }
+
+      }
+      
+    }
+  }
+}
+.btnStyle{
+  color: #ffff;
+}
+.footerTotal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px 10px 5px 10px;
+  h3{
+    color: #fff;
+    margin: 0px;
+    @media screen and (max-width: 500px) {
+      font-size: 9px;
+    }
+  }
+}
+.calenderIcon{
+  font-size: 17px;
+  @media only screen and (max-width: 500px) {
+    font-size: 15px;
+  }
+      path{
+        color: #121212;
+      }
+}

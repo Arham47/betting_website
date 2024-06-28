@@ -1,0 +1,484 @@
+.modelClass {
+  .mainContainer {
+    .btnWrapper {
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      //   padding-top: 20px;
+      .btns {
+        display: flex;
+        gap: 10px;
+        margin-right: 14px;
+        span {
+          font-size: 14px;
+          font-weight: 600;
+          cursor: pointer;
+        }
+      }
+      *{
+        color: #000;
+      }
+    }
+    @media only screen and (max-width: 420px) {
+      .btnWrapper {
+        gap: 10px;
+        // padding-top: 20px;
+        margin-right: 9px;
+        padding-left: 0px;
+        .btns {
+          span {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .buttonDiv {
+      display: flex;
+      align-items: center;
+      // flex-direction: column-reverse;
+      justify-content: flex-end;
+      // padding-inline: 25px;
+      width: 100%;
+      gap: 63px;
+      .submitBtn_one {
+        // background-color: #e65665;
+        font-size: 18px;
+        font-weight: bold;
+        height: 33px;
+        width: 82px;
+      }
+
+      p {
+        font-size: 16px;
+        font-weight: 700;
+        color: #ffffff;
+      }
+    }
+    // @media only screen and (max-width: 518px) {
+      .btnStyle {
+        color: #ffffff;
+      }
+    // }
+    @media only screen and (max-width: 418px) {
+      .buttonDiv {
+        padding-inline: 0px;
+        gap: 53px;
+        .submitBtn_one {
+          font-size: 16px;  
+          height: auto;
+          width: auto;
+        }
+        p {
+          font-size: 15px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  //   @media only screen and (max-width: 518px) {
+
+  // }
+  :global(.ant-modal-wrap) {
+    position: fixed;
+    top: -35px;
+    inset-inline-end: 0;
+    bottom: 0;
+    inset-inline-start: 0;
+    overflow: auto;
+    outline: 0;
+  }
+  :global(.ant-modal-content) {
+    position: relative;
+    background-color: #ffffff;
+    // background-color: var(--cardBg);
+    // background-image: url("./../../../assets/images/betoer-dashboard-effects1.png");
+    background-clip: padding-box;
+    border: 0;
+    width: 98%;
+    // object-fit: cover;
+    // border-radius: 55px 11px 11px 11px;
+    box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08),
+      0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+    pointer-events: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px 0px;
+    @media only screen and (max-width: 400px) {
+      :global(.ant-modal-close){
+        top:6px;
+      }
+    }
+    :global(.ant-modal-close){
+      color: #ffffff;
+    }
+  }
+  @media only screen and (max-width: 518px) {
+    :global(.ant-modal-content) {
+      // background-color: var(--cardBg);
+      background-color: #ffffff;
+      // background-image: url("../../../assets/images/grey-login-bg.webp");
+    }
+  }
+  .mainContainer {
+    padding-left: 28px;
+    padding-right: 36px;
+    padding-bottom: 10px;
+    // padding-top: 5px;
+
+    .content {
+      white-space: pre-wrap;
+      // padding-top: 5px;
+      height: auto;
+      line-height: 20px;
+        color: #ffffff;
+    }
+    @media only screen and (max-width: 518px) {
+      .content {
+        height: auto;
+        // padding-bottom: 50px;
+      }
+    }
+  }
+  @media only screen and (max-width: 518px) {
+    .mainContainer {
+      color: #ffffff;
+    }
+  }
+  .iconImage {
+    padding-left: 49px;
+    padding-bottom: 10px;
+    padding-top: 34px;
+  }
+  @media only screen and (max-width: 518px) {
+    .iconImage {
+      width: 80%;
+      padding-left: 25px;
+      padding-top: 10px;
+    }
+  }
+}
+
+//grey theme
+
+.modelClassTwo {
+  .mainContainer {
+    .btnWrapper {
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      //   padding-top: 20px;
+      .btns {
+        display: flex;
+        gap: 10px;
+        margin-right: 14px;
+        span {
+          font-size: 14px;
+          font-weight: 600;
+          cursor: pointer;
+        }
+      }
+      *{
+        color: #050505;
+      }
+    }
+    @media only screen and (max-width: 420px) {
+      .btnWrapper {
+        gap: 10px;
+        // padding-top: 20px;
+        margin-right: 9px;
+        padding-left: 0px;
+        .btns {
+          span {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .buttonDiv {
+      display: flex;
+      align-items: center;
+      // flex-direction: column-reverse;
+      justify-content: flex-end;
+      // padding-inline: 25px;
+      width: 100%;
+      gap: 63px;
+      .submitBtn_one {
+        // background-color: #e65665;
+        // background-color: var(--cardBg);
+        font-size: 18px;
+        font-weight: bold;
+        height: 33px;
+        width: 82px;
+      }
+
+      p {
+        font-size: 16px;
+        font-weight: 700;
+        color: #060606;
+      }
+    }
+    // @media only screen and (max-width: 518px) {
+      .btnStyle {
+        color: #050000;
+      }
+    // }
+    @media only screen and (max-width: 418px) {
+      .buttonDiv {
+        padding-inline: 0px;
+        gap: 53px;
+        .submitBtn_one {
+          font-size: 16px;  
+          height: auto;
+          width: auto;
+        }
+        p {
+          font-size: 15px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  //   @media only screen and (max-width: 518px) {
+
+  // }
+  :global(.ant-modal-wrap) {
+    position: fixed;
+    top: -35px;
+    inset-inline-end: 0;
+    bottom: 0;
+    inset-inline-start: 0;
+    overflow: auto;
+    outline: 0;
+  }
+  :global(.ant-modal-content) {
+    position: relative;
+    background-color: #ffffff;
+    // background-color: var(--cardBg);
+    // background-image: url("../../../assets/images/betoer-dashboard-effects2.png");
+    background-clip: padding-box;
+    border: 0;
+    width: 98%;
+    // object-fit: cover;
+    // border-radius: 55px 11px 11px 11px;
+    box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08),
+      0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+    pointer-events: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px 0px;
+    @media only screen and (max-width: 400px) {
+      :global(.ant-modal-close){
+        top:6px;
+      }
+    }
+    :global(.ant-modal-close){
+      color: #fff;
+      background-color: #000;
+    }
+  }
+  @media only screen and (max-width: 518px) {
+    :global(.ant-modal-content) {
+      // background-color: var(--cardBg);
+      background-color: #ffffff;
+      // background-image: url("../../../assets/images/grey-login-bg.webp");
+    }
+  }
+  .mainContainer {
+    padding-left: 28px;
+    padding-right: 36px;
+    padding-bottom: 10px;
+    // padding-top: 5px;
+
+    .content {
+      white-space: pre-wrap;
+      // padding-top: 5px;
+      height: auto;
+      line-height: 20px;
+        color: #050505;
+    }
+    @media only screen and (max-width: 518px) {
+      .content {
+        height: auto;
+        // padding-bottom: 50px;
+      }
+    }
+  }
+  @media only screen and (max-width: 518px) {
+    .mainContainer {
+      color: #050505;
+    }
+  }
+  .iconImage {
+    padding-left: 49px;
+    padding-bottom: 10px;
+    padding-top: 34px;
+  }
+  @media only screen and (max-width: 518px) {
+    .iconImage {
+      width: 80%;
+      padding-left: 25px;
+      padding-top: 10px;
+    }
+  }
+}
+
+//dark theme
+.modelClassThree {
+  .mainContainer {
+    .btnWrapper {
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      //   padding-top: 20px;
+      .btns {
+        display: flex;
+        gap: 10px;
+        margin-right: 14px;
+        span {
+          font-size: 14px;
+          font-weight: 600;
+          cursor: pointer;
+        }
+      }
+      *{
+        color: #040404;
+      }
+    }
+    @media only screen and (max-width: 420px) {
+      .btnWrapper {
+        gap: 10px;
+        // padding-top: 20px;
+        margin-right: 9px;
+        padding-left: 0px;
+        .btns {
+          span {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .buttonDiv {
+      display: flex;
+      align-items: center;
+      // flex-direction: column-reverse;
+      justify-content: flex-end;
+      padding-inline: 25px;
+      width: 100%;
+      gap: 63px;
+      .submitBtn_one {
+        // background-color: #e65665;
+        font-size: 18px;
+        font-weight: bold;
+        height: 33px;
+        width: 82px;
+      }
+
+      p {
+        font-size: 16px;
+        font-weight: 700;
+        color: #050505;
+      }
+    }
+    // @media only screen and (max-width: 518px) {
+      .btnStyle {
+        color: #0a0909;
+      }
+    // }
+    @media only screen and (max-width: 418px) {
+      .buttonDiv {
+        padding-inline: 0px;
+        gap: 53px;
+        .submitBtn_one {
+          font-size: 16px;  
+          height: auto;
+          width: auto;
+        }
+        p {
+          font-size: 15px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  //   @media only screen and (max-width: 518px) {
+
+  // }
+  :global(.ant-modal-wrap) {
+    position: fixed;
+    top: -35px;
+    inset-inline-end: 0;
+    bottom: 0;
+    inset-inline-start: 0;
+    overflow: auto;
+    outline: 0;
+  }
+  :global(.ant-modal-content) {
+    position: relative;
+    background-color: #ffffff;
+    // background-color: var(--cardBg);
+    // background-image: url("../../../assets/images/betoer-dashboard-effects3.png");
+    background-clip: padding-box;
+    border: 0;
+    width: 98%;
+    // object-fit: cover;
+    // border-radius: 55px 11px 11px 11px;
+    box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08),
+      0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+    pointer-events: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px 0px;
+    @media only screen and (max-width: 400px) {
+      :global(.ant-modal-close){
+        top:6px;
+      }
+    }
+    :global(.ant-modal-close){
+      color: #000;
+    }
+  }
+  @media only screen and (max-width: 518px) {
+    :global(.ant-modal-content) {
+      // background-image: url("../../../assets/images/grey-login-bg.webp");
+    }
+  }
+  .mainContainer {
+    padding-left: 28px;
+    padding-right: 36px;
+    padding-bottom: 10px;
+
+    .content {
+      white-space: pre-wrap;
+      // padding-top: 5px;
+      height: auto;
+      line-height: 20px;
+        color: #000;
+    }
+    @media only screen and (max-width: 518px) {
+      .content {
+        height: auto;
+        // padding-bottom: 50px;
+      }
+    }
+  }
+  @media only screen and (max-width: 518px) {
+    .mainContainer {
+      color: #000;
+    }
+  }
+  .iconImage {
+    padding-left: 49px;
+    padding-bottom: 10px;
+    padding-top: 34px;
+  }
+  @media only screen and (max-width: 518px) {
+    .iconImage {
+      width: 80%;
+      padding-left: 25px;
+      padding-top: 10px;
+    }
+  }
+}

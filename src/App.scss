@@ -1,0 +1,90 @@
+@import "@assets/styles/light-dark-theme";
+
+* {
+  // font-family: "Montserrat";
+  color: var(--fontColor);
+  // overscroll-behavior-y: contain;
+}
+
+.ant-form-item-label {
+	label {
+		color: var(--antFormLabelColor) !important;
+	}
+}
+
+@keyframes gradient1 {
+  0% {
+    top: 0%;
+    left: 0%;
+  }
+  50% {
+    top: -5%;
+    left: -20%;
+  }
+  100% {
+    top: 0%;
+    left: 0%;
+  }
+}
+
+@keyframes gradient2 {
+  0% {
+    top: 0%;
+    right: 0%;
+  }
+  50% {
+    top: 5%;
+    right: -20%;
+  }
+  100% {
+    top: 0%;
+    right: 0%;
+  }
+}
+
+.bg1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../public/imgs/bg1.svg");
+  background-size: contain;
+  width: 70rem;
+  height: 70rem;
+  z-index: -1;
+  animation: gradient1 10s ease infinite reverse;
+  background-repeat: no-repeat;
+}
+
+.bg2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url("../public/imgs/bg2.svg");
+  background-size: contain;
+  width: 70rem;
+  height: 70rem;
+  z-index: -1;
+  animation: gradient2 10s ease infinite reverse;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 1700px) {
+  .for-business-shape {
+    top: -35% !important;
+  }
+}
+
+/* Start Scroll */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+/* End Scroll */

@@ -1,0 +1,22 @@
+
+.mainContainer{
+
+        background-color: var(--cardBg); //--cardBg
+        border: var(--cardBorder);
+        height: 70px;
+        // border-radius: 50px 50px 0px 0;
+        .container{ 
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            .navImg{
+                width: 85px;
+                height: 80px; 
+            }
+            h1{
+                color: var(--);
+            }
+
+        }
+}

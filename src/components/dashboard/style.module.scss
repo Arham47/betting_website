@@ -1,0 +1,108 @@
+@import "@assets/styles/colors";
+@import "@assets/styles/light-dark-theme";
+
+
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  
+    .buttonscontainer {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    }
+  
+    .crossIcon {
+      cursor: pointer;
+    }
+  }
+  
+
+.dashboardPageContainer {
+    height: 100%;
+    background-color: var(--pagesBg);
+    padding: 10px;
+    .antIconClass{
+        font-size: 30px;
+        color: var(--fontColor);
+        padding-right: 10px;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+      }
+
+    .cardsContainer {
+        display: flex;
+        flex-direction: row;
+        // justify-content: space-around;
+        flex-wrap: wrap;
+
+
+        .cardCol {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 5px 0px;
+
+
+            @media only screen and (max-width: 768px) {
+                :global(.ant-card-body) {
+                    padding: 15px;
+                }
+            }
+
+            @media only screen and (max-width: 425px) {
+                :global(.ant-card-body) {
+                    padding: 8px;
+                    // padding-left: 25px;
+
+                }
+            }
+
+        }
+
+
+    }
+
+    @media only screen and (max-width: 764px) {
+        .cardsContainer {
+            flex-direction: column;
+        }
+    }
+
+    @media only screen and (max-width: 1425px) {
+        .cardCol {
+            flex-direction: column;
+        }
+    }
+
+}
+
+.selectedButton {
+    padding: 7px;
+    margin-bottom: 10px;
+
+    font-weight: bold;
+    color: black;
+    background-color: #ffe000;
+    border-radius: 8px;
+    margin-right: 2px;
+    cursor: pointer; 
+}
+  
+
+.customButton {
+    margin-bottom: 10px;
+    padding: 7px;
+  background-color: rgb(75, 73, 5);
+    font-weight: bold;
+    color: black;
+    // background-color: rgb(97, 97, 9);
+    border-radius: 8px;
+    margin-right: 2px;
+    cursor: pointer; 
+    
+}

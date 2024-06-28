@@ -1,0 +1,133 @@
+@import "@assets/styles/colors";
+
+.tableWrapper {
+  table {
+    border-bottom: var(--tableBorder);
+    // margin-bottom: 5px;
+    // border: var(--tableBorder);
+    // border-collapse: collapse;
+    color: var(--fontColor);
+  }
+
+  .table {
+    :global(.ant-table-cell) {
+      border: var(--tableBorder);
+      line-height: 17px;
+      background-color: var(--cardBg);
+      padding: 10px;
+      p{
+        margin: 0;
+      }
+      // &:hover {
+      //   color: var(--fontColorWithBg);
+      //   background-color: var(--titleBarBg) !important;
+      // }
+    }
+
+    :global(.ant-table-column-title){
+      z-index: 0;
+    }
+
+    :global(.ant-table-container) {
+      background-color: var(--cardBg);
+    }
+
+    :global(.ant-table-thead) {
+      th {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        background-color: var(--headerBgV2);
+        color: var(--sideBarFontColorV2);
+        // &:hover {
+        //   // color: var(--fontColorWithBg);
+        //   background-color: var(--cardBg) !important;
+        // }
+        *{
+          color: var(--sideBarFontColorV2)
+        }
+      }
+      :global(.ant-table-column-has-sorters:hover){
+        background-color: var(--headerBgV2) !important;
+      }
+      :global(.ant-table-column-sorter) {
+        color: var(--fontColor);
+      }
+    }
+    :global(.ant-table-expanded-row-fixed){
+      background-color: var(--cardBg)  !important;
+      padding: 0px 0px 20px !important;
+    }
+    :global(.ant-table-content){
+      &::-webkit-scrollbar {
+        height: 6px !important;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+        background-color: #999999 !important;
+    }
+    }
+    :global(.ant-empty-normal){
+      margin: 0;
+      svg{
+        height: 50px;
+        width: 50px;
+        padding-top: 8px;
+
+      }
+    }
+    :global(.ant-table-row:hover>td) {
+      background: var(--cardBg) !important;
+  }
+
+    :global(.ant-table-cell-row-hover) {
+
+      background-color: var(--cardBg) !important;
+      // :global(.dynamicColorOnHover) {
+      //   color: var(--fontColorWithBg);
+      //   path{
+      //     color: var(--fontColorWithBg);
+      //   }
+      // }
+      // p {
+      //   color: var(--fontColorWithBg);
+      // }
+      // border-radius: 5px;
+    }
+
+    :global(.ant-table-column-title) {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+    }
+    :global(.ant-empty-description) {
+      color: var(--fontColor);
+    }
+  }
+}
+.paginationClass {
+  color: var(--fontColorWithBg);
+}
+:global(.ant-pagination .ant-pagination-item a) {
+  color: var(--filledBtnColorNew);
+  background-color: var(--titleBarRightBg) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+// height: 26px;
+}
+:global(.ant-pagination .ant-pagination-item-active a){
+  border: 2px solid #1677ff;
+}
+:global(.ant-pagination){
+:global(.ant-pagination-item-active ){
+  border-radius: 0px;
+  border: 0px;
+  // border: 2px solid red;
+  height: fit-content !important;
+
+}
+}
+:global(.ant-pagination-options){
+  display: none !important;
+}

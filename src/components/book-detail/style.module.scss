@@ -1,0 +1,206 @@
+.mainContainer {
+  .clickAble {
+    color: #00b181;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+      color: #00b181;
+      font-weight: bold;
+    }
+  }
+  .container {
+    padding: 20px;
+    padding-bottom: 8px;
+    @media screen and (max-width:650px) {
+      padding: 4px;
+    }
+    .dateSection {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 15px;
+      align-items: center;
+      width: 100%;
+      background-color: var(--cardBg);
+      .datePickerOne {
+        max-width: 223px;
+      }
+    }
+    .flexAndGapClass{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      width: 100%;
+      .mainContaierofInput{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      width: 100%;
+      border-radius: 5px;
+      }
+      :global(.react-datetime-picker__clock){
+        display: none !important;
+      }
+      :global(.react-datetime-picker__clear-button) {
+        display: none !important;
+      }
+      :global(.react-datetime-picker__inputGroup){
+        *{
+          color: #121212!important
+        }
+      }
+      :global(.react-datetime-picker__wrapper){
+        height: 29px;
+        padding: 0px 10px;
+        background-color: #ffff;
+        border-radius: 5px;
+      }
+      :global(.react-calendar){
+        background-color: var(--cardBg)!important;
+        *{ background-color: var(--cardBg)!important;
+        }
+        &:hover{
+         *{ background-color: var(--cardBg)!important;
+        }
+      }
+      }
+      }
+    .mainTableDiv {
+      display: flex;
+      // padding: 10px;
+      flex-direction: row;
+      gap: 10px;
+      margin-top: 10px;
+      .gridOne {
+        .positiveClient {
+          :global(.ant-table-footer) {
+            padding: 0;
+            border-radius: 0;
+            color: #ffff;
+            border: var(--cardBorder);
+            // height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #085845;
+
+            .footerTotal {
+              display: flex;
+              width: 100%;
+              flex-direction: row;
+              justify-content: space-between;
+              padding: 5px 10px 5px 10px;
+              h3{
+                color: #fff;
+                margin: 0px;
+                @media screen and (max-width: 500px) {
+                  font-size: 9px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .gridTwo {
+
+        .negativeClient {
+          :global(.ant-table-footer) {
+            padding: 0;
+            border-radius: 0;
+            color: #ffff;
+            // height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #F86C6B;
+
+            .footerTotal {
+              display: flex;
+              width: 100%;
+              flex-direction: row;
+              justify-content: space-between;
+              padding: 5px 10px 5px 10px;
+              h3{
+                color: #fff;
+                margin: 0px;
+                @media screen and (max-width: 500px) {
+                  font-size: 9px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .gridThree {
+        :global(.ant-table-footer) {
+          padding: 0;
+          border-radius: 0;
+          color: #ffff;
+          // height: 50px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: #F86C6B;
+
+          .footerTotal {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 5px 10px 5px 10px;
+            h3{
+              color: #fff;
+              margin: 0px;
+              @media screen and (max-width: 500px) {
+                font-size: 9px;
+              }
+            }
+          }
+        }
+
+      }
+      .gridThreePositive {
+        :global(.ant-table-footer) {
+          padding: 0;
+          border-radius: 0;
+          color: #ffff;
+          // height: 50px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: #085845;
+
+          .footerTotal {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 5px 10px 5px 10px;
+            h3{
+              color: #fff;
+              margin: 0px;
+              @media screen and (max-width: 500px) {
+                font-size: 9px;
+              }
+            }
+          }
+        }
+
+      }
+      
+    }
+  }
+}
+.btnStyle{
+  color: #ffff;
+}
+.calenderIcon{
+  font-size: 17px;
+  @media only screen and (max-width: 500px) {
+    font-size: 15px;
+  }
+      path{
+        color: #121212;
+      }
+}

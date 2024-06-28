@@ -1,0 +1,66 @@
+@import "@assets/styles/light-dark-theme";
+.mainWrapper{
+    // background-color: #eee;
+    color: var(--fontColor);
+    padding: 10px;
+} 
+.antIconClass{
+    font-size: 30px;
+    color: var(--fontColor);
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+  }
+.secondCol {
+    .imgWrapper {
+      cursor: pointer;
+      margin-top: 20px;
+      border-radius: 8px 8px 0 0;
+      overflow: hidden;
+      transition: box-shadow 0.3s ease, width 0.5s ease;
+      width: 100%;
+      box-shadow: 0 4px 8px 0 rgba(111, 111, 111, 0.9), 0 6px 20px 0 rgba(114, 114, 114, 0.8);
+      &:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 177, 129, 0.9), 0 6px 20px 0 rgba(0, 177, 129, 0.8);
+        width: 96%; 
+      }
+    
+      img {
+        border-radius: 8px 8px 0 0;
+        width: 100%;
+        transition: transform 0.3s ease; 
+      }
+    
+      &:hover img {
+        transform: scale(1.05);
+      }
+      .gameName {
+        margin-top: -6px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 10px 5px;
+        line-height: 100%;
+        color: #fff;
+        text-align: center;
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        background: linear-gradient(
+          180deg,
+          rgba(125, 185, 232, 0) 0,
+          #00b181
+        );
+      }
+    }
+  }
+  .emptyClass{
+    :global(.ant-empty-description){
+      color: var(--fontColor) !important;
+    }
+  }

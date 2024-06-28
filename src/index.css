@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior-y: contain;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+.cricketImgWrapper {
+  width: 32px;
+  margin-right: 5px;
+}
+.cricket-body {
+  display: flex;
+  align-items: center;
+}
+.cricket-date {
+  white-space: nowrap;
+  width: auto;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #9e6105;
+}
+.title-body {
+  position: relative;
+}
+.title-btn {
+  position: absolute;
+  right: 6px;
+  top: 4px;
+}
+.dashboard-reload-btn {
+  position: absolute;
+  right: 42px;
+  top: 8px;
+}
+.bg-highlight {
+  background-color: #ff000057;
+}

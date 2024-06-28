@@ -1,0 +1,283 @@
+.mainContainer {
+  .container {
+    padding: 20px;
+    padding-bottom: 8px;
+    @media screen and (max-width:650px) {
+      padding: 4px;
+    }
+    .clickAble {
+      color: #00b181;
+      // font-weight: bold;
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+        color: #00b181;
+        // font-weight: bold;
+      }
+    }
+    .dailyPlTitlebar {
+      margin-top: 10px;
+      border: var(--cardBorder);
+      min-height: 40px;
+    }
+
+    .dateSection {
+      display: flex;
+      gap: 10px;
+      padding: 15px;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+      background-color: var(--cardBg);
+      .datePickerOne {
+        max-width: 223px;
+      }
+    }
+    .flexAndGapClass{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      .mainContaierofInput{
+        // border: 1px solid var(--fontColor) !important;
+        display: flex;
+        border-radius: 5px;
+      }
+      :global(.react-datetime-picker__clock){
+        display: none !important;
+      }
+      :global(.react-datetime-picker__clear-button) {
+        display: none !important;
+      }
+      :global(.react-datetime-picker__inputGroup){
+        *{
+          color: #121212!important
+        }
+      }
+      :global(.react-datetime-picker__wrapper){
+        height: 29px;
+        padding: 0px 10px;
+        background-color: #ffff;
+        border-radius: 5px;
+      }
+      :global(.react-calendar){
+        background-color: var(--cardBg)!important;
+        *{ background-color: var(--cardBg)!important;
+        }
+        &:hover{
+         *{ background-color: var(--cardBg)!important;
+        }
+      }
+      }
+      .suffixIcon{
+        background-color: #F0F3F5!important;
+          width: 35px;
+          border-radius: 5px;
+        img{
+          margin-top: 3px;
+          padding: 0px 7px;
+        }
+      }
+      }
+
+    :global(.ant-picker-suffix) {
+      background-color: #929292;
+    }
+    .dailyPlTitlebarTwo{
+      min-height: 30px;
+      border: var(--cardBorder);
+      min-height: 40px;
+    }
+    .mainTableDiv {
+      display: flex;
+      // padding: 10px;
+      flex-direction: row;
+      gap: 10px;
+      margin-top: 10px;
+      .gridOne {
+        // min-width: 33%;
+        .positiveClient {
+          :global(.ant-table-footer) { 
+            padding: 0;
+            border-radius: 0;
+            color: #ffff;
+            border: var(--cardBorder);
+            // height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #085845;
+
+            .footerTotal {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              width: 100%;
+              padding: 5px 10px 5px 10px;
+              h3{
+                color: #fff;
+                margin: 0px;
+                @media screen and (max-width: 500px) {
+                  font-size: 9px;
+                }
+              }
+            }
+          }
+        }
+        // @media screen and (max-width: 966px) {
+        //   min-width: 60%;
+        // }
+        // @media screen and (max-width: 476px) {
+        //   min-width: 70%;
+        //   justify-content: center;
+        // }
+      }
+      .gridTwo {
+        // min-width: 33%;
+
+        .negativeClient {
+          :global(.ant-table-footer) {
+            padding: 0;
+            border-radius: 0;
+            color: #ffff;
+            // height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            // border: var(--cardBorder);
+            background-color: #F86C6B;
+
+            .footerTotal {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              width: 100%;
+              padding: 5px 10px 5px 10px;
+              h3{
+                color: #ffff;
+                margin: 0px;
+                @media screen and (max-width: 500px) {
+                  font-size: 9px;
+                }
+              }
+            }
+          }
+        }
+        // @media screen and (max-width: 966px) {
+        //   min-width: 60%;
+        // }
+        // @media screen and (max-width: 476px) {
+        //   min-width: 70%;
+        //   justify-content: center;
+        // }
+      }
+      .gridThree {
+        :global(.ant-table-footer) {
+          padding: 0;
+          border-radius: 0;
+          color: #ffff;
+          // height: 50px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          // border: var(--cardBorder);
+          background-color: #F86C6B;
+
+          .footerTotal {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            padding: 5px 10px 5px 10px;
+            h3{
+              color: #ffff;
+              margin: 0px;
+              @media screen and (max-width: 500px) {
+                font-size: 9px;
+              }
+            }
+          }
+        }
+
+      }
+      .gridThreePositive {
+        :global(.ant-table-footer) {
+          padding: 0;
+          border-radius: 0;
+          color: #ffff;
+          // height: 50px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          // border: var(--cardBorder);
+          background-color: #085845;
+
+          .footerTotal {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            padding: 5px 10px 5px 10px;
+            h3{
+              color: #ffff;
+              margin: 0px;
+              @media screen and (max-width: 500px) {
+                font-size: 9px;
+              }
+            }
+          }
+        }
+
+      }
+      
+    }
+  }
+}
+.btnStyle{
+  color: #ffff;
+}
+  .searchBarMain{
+      // padding-top: 10px;
+      .searchTitleBar{
+        align-items: center;
+        background-color: var(--titleBarBg);
+        border-bottom: 1px solid var(--titleBarBorder);
+        color: var(--fontColorWithBg);
+        display: flex;
+        gap: 10px;
+        padding: 5px 0 5px 10px;
+        h4 {
+          font-weight: 600;
+          font-size: 17px;
+          color: var(--fontColorWithBg);
+          margin: 0;
+          @media only screen and (max-width: 500px) {
+            font-size: 15px;
+          }
+        }
+        .filterIcon{
+          font-size: 17px;
+          @media only screen and (max-width: 500px) {
+            font-size: 15px;
+          }
+              path{
+                color: var(--fontColorWithBg);
+              }
+      }
+      }
+    .searchUserText{
+      font-size: 20px;
+      color: var(--fontColorWithBg);
+      @media only screen and (max-width: 415px) {
+        font-size: 15px;
+      }
+    }
+  }
+  .calenderIcon{
+    font-size: 17px;
+    @media only screen and (max-width: 500px) {
+      font-size: 15px;
+    }
+        path{
+          color: #121212;
+        }
+  }

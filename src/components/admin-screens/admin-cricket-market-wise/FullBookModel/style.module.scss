@@ -1,0 +1,52 @@
+.antModalPlaceBet {
+  :global(.ant-modal-content) {
+    background-color: var(--cardBg);
+    min-height: max-content;
+    padding-bottom: 20px;
+  }
+}
+.btnStyle {
+  color: #ffff;
+}
+.wrapper {
+  margin-top: 15px;
+  .titleWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+    .titleClass {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .btnStyle {
+      color: #ffff;
+    }
+  }
+  .tableWrapper{
+    background-color: var(--cardBg);
+    padding: 10px;
+    table{
+        width: 100%;
+        border-spacing: 0;
+    border-collapse: collapse;
+    }
+    td, th{
+    border: 1px solid  #abb0b3;
+    border-collapse: collapse;
+    padding: 7px;
+    color: #121212
+    }
+    .widthClass{
+        width: 20%;
+        text-align: center;
+        color: var(--fontColor);
+    }
+    .highlightedPinkRow {
+        background: #FFCDCC !important;
+      }
+      .highlightedOtherRow {
+            background: #E3F8FF !important;
+        }
+  }
+}

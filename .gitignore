@@ -1,0 +1,6 @@
+node_modules
+src/clinicfinder.pem
+src/info.txt
+.idea
+build
+.env

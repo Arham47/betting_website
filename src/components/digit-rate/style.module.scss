@@ -1,0 +1,10 @@
+@import "@assets/styles/light-dark-theme";
+.mainWrapper{
+    padding: 10px;
+    @media only screen and (max-width: 650px) {
+        padding: 4px;
+      }
+    .btnClass{
+        color: #ffff;
+    }
+} 

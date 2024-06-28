@@ -1,0 +1,153 @@
+@import "@assets/styles/colors";
+
+.mainWrapper {
+   padding: 15px;
+   @media screen and (max-width:650px) {
+    padding: 4px 0px;
+   }
+   .card{
+    background-color: var(--cardBg);
+    padding: 4px 10px 14px 10px;
+    border-radius: 5px;
+    width: 90%;
+    margin: auto;
+    }
+    .antIconClass{
+      font-size: 30px;
+      color: var(--fontColor);
+      padding-right: 10px;
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      width: 100%;
+    }
+   .dropdownContainer{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+
+    .heading{
+      font-size: 16px;
+      font-weight: bold;
+      width: 55%;
+      @media screen and (max-width: 920px) {
+        width: 85%;
+      }
+    }
+    .dropdown{
+      width: 55%;
+      margin: auto;
+      @media screen and (max-width: 920px) {
+        width: 85%;
+      }
+      text-align: center;
+      :global(.ant-select-selector){
+        max-height: 55px;
+        overflow-y: scroll;
+        min-height: 44px !important;
+      }
+      *{
+      color: #121212 !important;
+    }
+   }
+   .dropdownClass{
+    width: 55%;
+    margin: auto;
+    @media screen and (max-width: 920px) {
+      width: 85%;
+    }
+    :global(.ant-select-selector){
+      max-height: 55px;
+      overflow-y: scroll;
+      min-height: 32px !important;
+    }
+    *{
+    color: #121212 !important;
+  }
+ }
+  }
+   .marginTopClass{
+    margin-top: 10px;
+   } 
+   .FlexWraperForGame{
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    cursor: pointer;
+   
+   .imageContainer {
+    position: relative;
+    display: inline-block;
+    border: 1px solid gray;
+    border-radius: 2px;
+    width: 100%;
+   }
+  .textOverlay {
+     background-color: transparent;
+    color: white;
+    gap: 10px;
+    margin-bottom: 3px;
+    :global(.anticon){
+      font-size: 18px;
+      position: absolute;
+      bottom: 1px;
+      svg{
+        path{
+          color:rgb(49, 122, 250, .7) !important;
+        }
+      }
+    }
+  }
+  
+  .textOverlay p {
+    margin: 0;
+    text-align: center;
+  }
+}
+   .titleBar{
+    width: 100%;
+    height: 30px;
+    color: var(--fontColorWithBg);
+    background-color: var(--titleBarBg);
+    font-size: 16px !important;
+    border-radius: 5px;
+    margin-top: 20px;
+    h4{
+        font-size: 16px !important;
+        
+    }
+}
+
+};
+
+.btnStyle{
+  color: #ffff;
+}
+.selcetSingleCategory{
+  :global(.ant-select-selection-item){
+    display: flex !important;
+    align-items: center !important;
+  }
+  :global(.ant-select-selection-placeholder){
+    display: flex !important;
+    align-items: center !important;
+  }
+}
+.searchClass{
+  // input{
+    height: 42px !important;
+  // }
+ 
+}
+.calenderIcon{
+  font-size: 17px;
+  @media only screen and (max-width: 500px) {
+    font-size: 15px;
+  }
+      path{
+        color: #121212 !important;
+      }
+}

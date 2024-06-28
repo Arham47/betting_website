@@ -1,0 +1,1 @@
+export const LOAD_USER_INFO_INTERVAL = 5000

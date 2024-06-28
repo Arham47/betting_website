@@ -1,0 +1,116 @@
+.mainContainer {
+  padding: 15px;
+  padding-bottom: 8px;
+  min-width: 100%;
+  @media screen and (max-width:650px) {
+    padding: 4px;
+  }
+  .dateSection {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 15px;
+    width: 100%;
+    background-color: var(--cardBg);
+    .datePickerOne {
+      max-width: 223px;
+    }
+  }
+  .flexAndGapClass{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    width: 100%;
+    .mainContaierofInput{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+      border-radius: 5px;
+    }
+    :global(.react-datetime-picker__clock){
+      display: none !important;
+    }
+    :global(.react-datetime-picker__clear-button) {
+      display: none !important;
+    }
+    :global(.react-datetime-picker__inputGroup){
+      *{
+        color: #121212!important
+      }
+    }
+    :global(.react-datetime-picker__wrapper){
+      height: 29px;
+      padding: 0px 10px;
+      background-color: #ffff;
+      border-radius: 5px;
+    }
+    :global(.react-calendar){
+      background-color: var(--cardBg)!important;
+      *{ background-color: var(--cardBg)!important;
+      }
+      &:hover{
+       *{ background-color: var(--cardBg)!important;
+      }
+    }
+    }
+    }
+ 
+  .newTableWrapper{
+    :global(.ant-table-cell){
+      div{
+      display: flex;
+      justify-content: center;
+      }
+    }
+    :global(.ant-table-wrapper .ant-table-thead >tr>td:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before) {
+      background-color: unset;
+    }
+    :global(.ant-table-container)
+     table > thead > tr > th:first-child {
+      border-start-start-radius: 0px !important;
+    }
+    :global(.ant-table-thead){
+      th{
+        background-color: var(--cardBg);
+        color: var(--fontColor);
+        *{
+          color: var(--fontColor);
+        }
+      }
+    }
+    .valuesWrapper{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2px;
+      margin-top: 8px;
+
+      span{
+        border: 1px solid blue;
+        min-width: 40px;
+        padding: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: blue;
+        &:hover{
+        border: 1px solid #121212;
+        color: #121212;
+        text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+.btnStyle{
+  color: #ffff;
+}
+.calenderIcon{
+  font-size: 17px;
+  @media only screen and (max-width: 500px) {
+    font-size: 15px;
+  }
+      path{
+        color: #121212;
+      }
+}

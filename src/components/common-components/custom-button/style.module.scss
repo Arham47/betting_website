@@ -1,0 +1,53 @@
+@import "@assets/styles/colors";
+
+.filledCommonButton {
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--titleBarRightBg);
+  color: var(--filledBtnColor);
+  // border: 1px solid var(--filledBtnBorder);
+  border-radius: 5px;
+  // padding: 0px 5px;
+  // :global(.antd button){
+    height: 29px;
+  // }
+  &:hover {
+    // border: 1px solid var(--filledBtnBorder) !important;
+    // background-color: var(--filledBtnBgHover);
+    color: var(--filledBtnColorHover) !important;
+    box-shadow: var(--titleBarRightBg)
+  }
+  div{
+    color: var(--filledBtnColorNew);
+  }
+}
+
+.outLinedCommonButton {
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--outlinedBtnBg);
+  color: var(--outlinedBtnColor);
+  border: 1px solid var(--titleBarRightBg);
+  border-radius: 5px;
+  height: 29px;
+  // padding: 0px 5px;
+  &:hover {
+    // border: 1px solid var(--outlinedBtnBorderHover) !important;
+    box-shadow: var(--titleBarRightBg);
+    background-color: var(--outlinedBtnBgHover)
+  }
+}
+
+// :global(.ant-btn-default:disabled){
+//  background-color: var(--cardBg);
+//  border: 1px solid var(--fontColor);
+//  div{
+//   color: var(--fontColor);
+//  }
+// }

@@ -1,0 +1,133 @@
+@import "@assets/styles/colors";
+
+.betsBody {
+padding: 10px;
+@media screen and (max-width: 650px){
+  display: flex;
+  justify-content: center;
+  padding: 4px 0px;
+}
+  .mainDiv {
+    width: 100%;
+    @media screen and (max-width: 650px){
+      max-width: 100%;
+      width: 100%;
+    }
+    .usersDiv {
+
+      .formItemStyle {
+        text-align: justify;
+        justify-content: left;
+        text-align-last: left;
+        margin: 20px 0px 0px 20px;
+        max-width: 80%;
+        .ant-form-item-explain-error {
+          border: 2px solid;
+        }
+        
+      }
+
+      .passwordSuggestion {
+
+        :global(.ant-form-item-row) {
+          display: flex;
+          flex-direction: row-reverse;
+          margin: 0px 0px 0px 20px;
+          max-width: 80%;
+
+          :global(.ant-form-item-control-input-content) {
+            line-height: 10px;
+          }
+
+          .passwordSuggestionMsg {
+            font-size: 10px;
+            padding-left: 0px;
+            color: var(--formItemExplainError);
+          }
+        }
+      }
+      .submitBtn_one {
+        display: flex;
+        justify-content: center;
+        margin: 50px 0px 0px 50px;
+        min-width: 129px;
+        min-height: 35px;
+        font-size: 16px;
+        @media only screen and (max-width: 576px) {
+          min-width: 119px;
+          min-height: 30px;
+          // margin: 50px 0px 0px 50px;
+        }
+      }
+    }
+
+    .betSizesDiv {
+      border-radius: 15px;
+      padding-bottom: 20px;
+      padding: 0 !important;
+      background-color: var(--cardBg);
+      .formStyleBetSizes {
+        .gapClass32 {
+          display: flex;
+          // gap: 5%;
+          justify-content: space-around;
+          margin-bottom: 10px;
+          margin-left: 10px;
+          align-items: center;
+          .widthpercentage{
+            width: 50%;
+            .BorderColrRed{
+              border-color: red;
+            }
+          }
+          .staricColor{
+            color: red;
+            padding-right: 5px;
+          }
+          label{
+            white-space: nowrap;
+          }
+        }
+      }
+
+      @media screen and ( max-width: 991px ){
+          margin-top: 10px;
+      }
+    }
+  }
+
+  .userFormStyle {
+    background-color: var(--cardBg);
+    border-radius: 15px;
+    padding-bottom: 20px;
+
+    .userBetForm {
+      .editclint {
+        background-color: var(--filledBtnBg);
+        border-radius: 15px 15px 0 0;
+        height: 40px;
+        color: var(--filledBtnBg);
+      }
+      @media screen and (max-width:580px) {
+        :global(.ant-row){
+          flex-wrap: nowrap;
+        }
+        :global(.ant-col){
+          max-width: 50%;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .submitBtnJustify{
+      display: flex;
+      justify-content: center;
+      .submitBtn_one{
+        margin: 50px 0px 0px 0px !important;
+      }
+    }
+  }
+}
+.btnStyle{
+  color: #ffff;
+}

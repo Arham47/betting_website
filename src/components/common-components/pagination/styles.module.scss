@@ -1,0 +1,17 @@
+@import '@assets/styles/colors';
+
+.pagination {
+  :global(.ant-pagination-prev),
+  :global(.ant-pagination-next) {
+    padding: 0px !important;
+    border: none !important;
+    text-align: center !important;
+  }
+  :global(.ant-pagination-item) {
+    line-height: unset !important;
+  }
+
+  :global(.ant-select-selector) {
+    height: 32px !important;
+  }
+}

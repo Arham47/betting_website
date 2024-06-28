@@ -1,0 +1,87 @@
+.mainContainer {
+  padding: 15px;
+  padding-bottom: 8px;
+  min-width: 100%;
+  @media screen and (max-width:650px) {
+    padding: 4px;
+  }
+  .container {
+    border: 2px solid;
+    min-width: 100%;
+    display: flex;
+  }
+
+  .finalSheetTitleBar {
+    border-radius: 2px;
+  }
+  .finalSheetCheckBoxDiv {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    .finalSheetCheckBoxLable {
+      color: var(--filledBtnColorNew);
+      font-size: 17px;
+    }
+  }
+  .mainTableDiv {
+    display: flex;
+    padding-right: 10px;
+    gap: 10px;
+    margin-top: 10px;
+
+    .gridOne {
+      min-width: 50%;
+
+      .positiveClient {
+        :global(.ant-table-footer) {
+          padding: 0;
+          border-radius: 0;
+          color: #fff;
+          border: var(--cardBorder);
+          background-color: #085845;
+          h3{
+            color: #fff;
+          }
+        }
+      }
+    }
+    .gridTwo {
+      min-width: 50%;
+
+      .negativeClient {
+        :global(.ant-table-footer) {
+          padding: 0;
+          border-radius: 0;
+          border: var(--cardBorder);
+          background-color: #F86C6B;
+          h3{
+            color: #fff;
+          }
+        }
+      }
+    }
+    .gridThree {
+      min-width: 50%;
+    }
+  }
+}
+.footerTotal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px 10px 5px 10px;
+  h3{
+    color: #fff;
+    margin: 0px;
+  }
+}
+.clickAble {
+  color: #00b181;
+  // font-weight: bold;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+    color: #00b181;
+    // font-weight: bold;
+  }
+}

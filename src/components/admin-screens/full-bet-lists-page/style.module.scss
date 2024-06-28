@@ -1,0 +1,61 @@
+@import "@assets/styles/colors";
+
+.mainWrapper {
+
+ padding: 10px;
+ .antIconClass{
+  font-size: 30px;
+  color: var(--fontColor);
+  padding-right: 10px;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  width: 100%;
+}
+  .tableWrapper{
+    background-color: var(--cardBg);
+    overflow-x: scroll;
+    overflow-y: hidden;
+    &::-webkit-scrollbar {
+      height: 6px !important;
+  }
+
+  &::-webkit-scrollbar-thumb {
+      background-color: #999999 !important;
+  }
+    padding: 5px;
+    table{
+        width: 100%;
+        border-spacing: 0;
+    border-collapse: collapse;
+    }
+    td, th{
+    border: 1px solid  #abb0b3;
+    border-collapse: collapse;
+    padding: 7px;
+    }
+    .widthClass{
+        width: 20%;
+        text-align: center;
+        color: #000;
+    }
+    .widthClassHead{
+      color: var(--fontColor);
+    }
+    .highlightedPinkRow {
+        background: #FFCDCC !important;
+      }
+      .highlightedOtherRow {
+            background: #E3F8FF !important;
+        }
+  }
+  .tableHeadingWrapper{
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  .btnClass{
+    color: #ffff;
+  }
+};
